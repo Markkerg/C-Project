@@ -1,3 +1,6 @@
+ก่อนเริ่มให้โหลดตามคลิปนี้
+https://www.youtube.com/watch?v=9VE7p-he4fA&ab_channel=CodeBear
+
 วิธีการ complie
 
 1.เปิดไปที่โฟลเดอร์ของโปรเจค
