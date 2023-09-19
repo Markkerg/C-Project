@@ -7,8 +7,8 @@ void is_over();
 int continue_story(int num);
 int check,act=1,process=0,retry=0;
 
-void act1_morning(){
-    char di_morning[] = 
+void Act_1(){
+    char di_act1[] = 
     "One day as usually in the morning at the school.\nStudents gathered together to find something to do while waiting in line.\n"
     "07:22 At somewhere in the school.\n"
     "Ton : \"I'm bored lately. Is there anything I can do?\"\n"
@@ -18,9 +18,9 @@ void act1_morning(){
     "Ball : \"Do we even have that homework?\"\n"
     "After Ball's words, they looked at each other and laughed.\n"
     "Hon : \"Because of this, maybe we can be friends.\"\n"
-    "Ton : \"I just realized. Have you guys ever heard the legend of the 6th floor at our school?\"\n"
-    "Ball : \"What kind of legend is this? A legend that fools my children. I don't want it.\"\n"
-    "Ton : \"The legend is that there is a room on the 6th floor where at night the room lights turn on by themselves.\n      And when you look into the room, you will find that there are students all over the room, but the characteristics of the students found are different.\"\n"
+    "Ton : \"I just realized. Have you guys ever heard the myth of the 6th floor at our school?\"\n"
+    "Ball : \"What kind of myth is this? A myth that fools my children. I don't want it.\"\n"
+    "Ton : \"The myth is that there is a room on the 6th floor where at night the room lights turn on by themselves.\n      And when you look into the room, you will find that there are students all over the room, but the characteristics of the students found are different.\"\n"
     "Poom : \"Does our school organize night classes? Or how about a pajama party in that room, haha.\"\n"
     "After that, Ton's face became solemn and he said seriously.\n"
     "Ton : \"Everyone who saw it in the room You will see that they are lifeless, some have beachheads, some have missing arms, some have blood all over their bodies.\"\n"
@@ -31,13 +31,8 @@ void act1_morning(){
     "Ton's words caused the group's atmosphere to fall into silence for a while. And it was shattered by the sound of the school's buzzer in line.\n"
     "Poom : \"Just forget it. Come on, let's get in line first, then we'll talk about it.\"\n"
     "Hon : \"Okay, let's go get in line first.\"\n"
-    "They lined up and didn't talk about it at all. Until the time passed until lunch break.\n\n";
-    printf("\nAct 1 : Curiosity is the cause.\n\n");
-    printf(di_morning);
-}
-
-void act1_lunch(){
-    char di_lunch[] = 
+    "They lined up and didn't talk about it at all. Until the time passed until lunch break.\n\n"
+    
     "12:06 At the marble table under the school building.\n"
     "Hon : \"Sign!, why does Teacher Preecha give so much homework?\"\n"
     "Poom : \"Yes, can I make it in time to send it next week?\"\n"
@@ -88,12 +83,8 @@ void act1_lunch(){
     "12:57 The school bell rang.\n"
     "Hon : \"Okay, let's go to the classroom.\"\n"
     "Poom : \"Alright, we'll take about it in the evening.\"\n"
-    "Then they went up to their room to continue studying in the afternoon. and wait until after school in the evening\n\n";
-    printf(di_lunch);
-}
-
-void act1_evening(){
-    char di_evening[] = 
+    "Then they went up to their room to continue studying in the afternoon. and wait until after school in the evening\n\n"
+    
     "After school, they gathered together at the same marble table. To discuss and arrange things to do tonight.\n"
     "Ball : \"So what's the plan?\"\n"
     "Ton : \"You'll just walk in mid and killed the sniper. Then we ran into b short after that....\"\n"
@@ -125,11 +116,12 @@ void act1_evening(){
     "Poom : \"Let's go home. See you at the appointed time.\"\n"
     "Hon : \"See you soon.\"\n"
     "After that, they went their separate ways and went home. Do their own activities while waiting for your appointment time.\nBut did you know that while they were meeting to plan, someone overheard what they were talking about?\n\n";
-    printf(di_evening);
+    printf("\nAct 1 : Curiosity is the cause.\n\n");
+    printf(di_act1);
 }
 
 void act2_behindschool(){
-    char appoint[] = 
+    char sneakin[] = 
     "21:27 At the meeting point behind the school.\n"
     " ? : \"Do you think it'll come?\"\n"
     " ? : \"Who do you mean?\"\n"
@@ -148,7 +140,7 @@ void act2_behindschool(){
     "Hon : \"Good, then let's wait a little longer. What did you two bring.\"\n"
     "Poom : \"I only brought my phone and a flashlight.\"\n"
     "Ball : \"I brought my phone, candy, and amulets.\"\n"
-    "Hon : \"You're that afraid. That legend is not true.\"\n"
+    "Hon : \"You're that afraid. That myth is not true.\"\n"
     "Ball : \"Having it gives me peace of mind. If it really happened, what would you do?\"\n"
     "Hon : \"A lottery number. My mom want to win the lotterry.\"\n"
     "Poom : \"Haha, I think if we really found it, we would definitely run without thinking about our lives.\"\n"
@@ -169,31 +161,185 @@ void act2_behindschool(){
     "Ball : \"But if we can go up, there won't be any difficulty. Be careful not to get caught.\"\n"
     "Ton : \"True. So let's go.\"\n\n"
     "The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\n";
+    
+    char headtostairs[] = 
+    "The guard passed by as if nothing had happened.\n"
+    "Ton : \"Guard had already passed by. Let's go.\"\n"
+    "The four of them then got up and headed towards the stairs next to the governing room. While they were walking, they had some small talk.\n"
+    "Ball : \"Well, we've come this far and I still don't know. Which room is it?\"\n"
+    "Poom : \"Oh, I forgot to think. Which room is it?\"\n"
+    "Ton : \"Be honest, I don't know too.\"\n"
+    "Ball : \"Hey, weren't you the one who brought us here? How can you not know?\"\n"
+    "Ton : \"Well, from what I've heard, it's not the same room in every nights.\"\n"
+    "Hon : \"Great. The damn event happened randomly room.\"\n"
+    "Ton : \"You can say that. Therefore, we had to go up and look before we knew which room it was.\"\n"
+    "Ball : \"But don't you have any doubts? The building is not tall enough to reach the sky.\n       Myth room on the 6th floor, there is only one room. Why don't the teachers or the guards know?\"\n"
+    "Poom : \"There's a reason, but what if he knows but pretends not to know?\"\n"
+    "Ball : \"You can think from that point. But it still makes me suspicious.\"\n"
+    "Ton : \"You starting to wonder right now?\"\n"
+    "Ball : \"I'm just realized this now.\"\n"
+    "While they were talking softly along the way, Suddenly, a mysterious black object fell from a high place. causing a loud sound\n"
+    "Ton : \"Shhh!!. Wait. Are you heard about that.\"\n"
+    "Hon : \"With my both ears.\"\n"
+    "Poom : \"I heard it too.\"\n"
+    "Ball : \"What is that shit sound?\"\n"
+    "Ton : \"I don't know, but the sound probably came from that direction.\"\n"
+    "And then Ton pointed his finger at the source of the sound.\n"
+    "Hon : \"There's something black.\"\n"
+    "Poom : \"What is it? I can't see clearly.\"\n"
+    "Ton : \"I don't know either. Do you want to go and see?\"\n"
+    "Hon : \"Going is crazy, but if you go you have to go all together.\"\n"
+    "At that moment, the mysterious black object stretched upwards. like a human being standing straight.\n"
+    "Hon : \"Hey, it's stretched up?\"\n"
+    "Poom : \"I don't know, but at first it wasn't this high, right?\"\n"
+    "Hon : \"It's true. So what do you do next? Do you want to go see it?\"\n"
+    "Poom : \"I don't dare. It's strangely creepy.\"\n"
+    "While they were wondering. In the blink of an eye only.\n"
+    "Ton : \"Just a moment, you guys. Where has it gone?\"\n"
+    "After Ton's words, the three of them turned to look. and found that the object had disappeared.\n"
+    "Hon : \"Where have it gone?\"\n"
+    "Ball : \"Look, it's on the school building.\"\n"
+    "Poom : \"What is it and what is it going to do?\"\n"
+    "Hon : \"How do I know? Line and ask it?. If you want to know that much\"\n"
+    "Ton : \"I have a strange feeling. It's probably not what I thought, right?\"\n"
+    "Poom : \"Being up there so quickly and standing up there right now couldn't have been anything else.\"\n"
+    "Suddenly, a black object fell from the top of the building onto the ground.\n and produced a sound as if human bones had hit a hard object. This made the four of them tremble with fear.\n"
+    "Poom : \"I'm getting goosebumps. I haven't even gotten into the building yet and I'm being welcomed.\"\n"
+    "Hon : \"I'm about to pee. There's hardly any strength in the legs.\"\n"
+    "Ball : \"What should we do next?, Ton. Or is this enough?\"\n"
+    "Ton : \"I'm afraid too. But having come this far, let's continue.\"\n"
+    "They continued walking until they were almost in front of the duty teacher's building.\n They talked together and came up with a plan to get past the building.\n\n"
+    "Ton : \"Okay, now we're in front of the teacher on duty building.\"\n";
+
+    char stairtosixth[] = 
+    "And then they reached the stairs next to the governing room.\n"
+    "Ton : \"We've arrived. Let's go up.\"\n"
+    "After that, they walked up.\n"
+    "Hon : \"It's the first time I've ever seen the inside of a school at night like this.\"\n"
+    "Ball : \"The governing room that we walked through was quiet and no one was there.\n       It's worth picking up a behavior sheet to actually increase your score.\"\n"
+    "Hon : \"Haha, you often break the rules, especially about being late.\"\n"
+    "Ball : \"What can I do? My house is far away and the traffic is stuck.\n       By the time the bus passes by my house, it's already late. Sometimes there would be a car accident and I wouldn't be able to go.\"\n"
+    "Hon : \"Haha, life is truly unlucky, but I understand that cause I'm late too.\"\n"
+    "Ball : \"But your house is next to the school. Are you still late?\"\n"
+    "Hon : \"The bed won't let me go. I couldn't get up so I continued to sleep.\"\n"
+    "Poom : \"You two always been like this.\"\n"
+    "Ton : \"Haha. But is there something strange?\"\n"
+    "Ball : \"What's the matter? Why don't I feel it?\"\n"
+    "Ton : \"Why do I feel like I'm walking in the same place?\"\n"
+    "Hon : \"Hm, really?\"\n"
+    "When they turned to look at the floor labels posted on every floor. They then discovered that they were just on the second floor.\n"
+    "Poom : \"Hey, I think we've been walking for quite a long time, but why did we just reach the 2nd floor?\"\n"
+    "Ball : \"I don't know what happened too. You guys are waiting here.\"\n"
+    "Poom : \"What are you going to do?\"\n"
+    "Suddenly Ball ran down the stairs. and came back up quickly\n"
+    "Ball : \"You guys, the last floor was the second floor.\"\n"
+    "Ton : \"What, that's crazy. How can it be the same floor?\"\n"
+    "Poom : \"Have you had a good look yet? I think you're see mistakenly.\"\n"
+    "Ball : \"I'm telling the truth. Do you want to go down and see?\"\n"
+    "Poom : \"Okay, I'll go to see.\"\n"
+    "Poom walked downstairs and returned with a startled expression.\n"
+    "Poom : \"I went to look and it's not the second floor.\"\n"
+    "Ton : \"See, I told you that..\"\n"
+    "Poom : \"It's a dead end!!!\"\n"
+    "After they heard this, they were very shocked. and began to think of a solution to this matter.\n"
+    "Ton : \"It's better to stay calm and find a solution. Shall we walk up first? At least look at that floor as well.\"\n"
+    "Poom : \"Okay.\"\n"
+    "Then they walked up and found the balcony of the corridor on each floor of the normal school building.\nWhen they saw this, they began to talk and plan again.\n"
+    "Ton : \"What floor are we in now?\"\n"
+    "Ball : \"It doesn't have a sign.\"\n"
+    "Hon : \"OMG!!, even the floor we're on doesn't know.\"\n"
+    "Ton : \"Please calm down. I think we should go look at the elevator. In case you find a clue as to what floor this is.\"\n"
+    "Poom : \"Good, let's go.\"\n"
+    "They decided to walk over to the elevator to see the floor numbers. But the number displayed is 9.\n"
+    "Ball : \"Our school only has 7 floors, isn't it? Why is it 9?\"\n"
+    "Ton : \"I don't know but if we go to the 6th floor, we have to go down, right? Then let's find a way down.\"\n"
+    "Hon : \"Okay, hope that's the right choice.\"\n"
+    "Ton : \"Let's stick together. Don't separate at all.\"\n"
+    "They walked forward to take another path down.\n"
+    "Poom : \"The balcony walkway has moonlight shining in. But why does it look dark?\"\n"
+    "Hon : \"It maybe a lunar eclipse, so it looks dark.\"\n"
+    "Ball : \"You are funny in every situation, even like this.\"\n"
+    "Hon : \"I want you all to feel comfortable.\"\n"
+    "Ball : \"Up to you, but definitely don't go overboard at this point.\"\n"
+    "Hon : \"Okay\"\n"
+    "When they had been walking for a while and were about to reach another path down. There was a hand holding Poom's leg."
+    "Poom : \"You guys help me. I don't know what caught me.\"\n"
+    "The three of them turned to Bhumi and were shocked to find that there was actually a hand holding Poom's leg.\nAnd behind them, as they walked past, it was completely dark, as if there was no light at all.\n"
+    "Ball : \"What the fuck is that!!\"\n"
+    "Poom : \"I don't know but please help me quickly.\"\n"
+    "Ton : \"You try kicking his hand. It might fall off.\"\n"
+    "Before Poom kicked the hand holding his leg. The hand slowly dragged his feet into the darkness.\nThat caused Bhumi to fall down and slowly be dragged away."
+    "Poom : \"Please help meeeee.\"\n"
+    "When Poom's voice died, he was completely dragged into the darkness. That made the other 3 people helpless."
+    "Hon : \"Poom has been dragged away. What should I do?\"\n"
+    "Ton : \"I don't know. Can you try to throwing a amulet in there?\"\n"
+    "Hon : \"Would you be crazy if they took my amulet away? I have nothing left to protect.\"\n"
+    "Ball : \"So what do we do? Shall we walk in?\"\n"
+    "Hon : \"I don't dare. It's so dark.\"\n"
+    "Suddenly, there was a howling sound in the darkness. Making the three of them instantly startled.\n"
+    "Ball : \"What is that noise?\"\n"
+    "Hon : \"I don't know. It came out loud in the dark.\"\n"
+    "Ton : \"Settle conscious. Then come face to face with it.\"\n"
+    "Hon : \"What are you going to do?\"\n"
+    "Ton : \"If there was a ghost, it would only have one pair of feet. But there are 3 of us, which means we have 3 pairs of feet.\"\n"
+    "Ball : \"That's true. Okay. Let's face it\"\n"
+    "The three of them stood in line in front of the board, preparing to deal with the unknown.\nAnd that mysterious voice was getting closer and closer to them.\n";
+
+    char waytodestination [] = 
+    "Poom : \"Ouch!, what the hell are you guys doing?\"\n"
+    "The thing came out was Poom that was dragged into the darkness.\n"
+    "Poom : \"It hurts that you threw it to me.\"\n"
+    "Ton : \"I'm sorry, I didn't know it was you.\"\n"
+    "Ball : \"How are you? Do you still have all 32 organs?\"\n"
+    "Poom : \"I'm fine, my friend.\"\n"
+    "Ton : \"OK, let's move on, shall we?\"\n"
+    "They succeeded in continuing down to the 8th floor.\nBut when I was about to continue down to the 7th floor, I found that it was a wall with no way down.\n"
+    "Ton : \"The way down here is closed again. We have to walk in the same direction as before.\"\n"
+    "Ball : \"Wait a minute, there's an unknown door here.\"\n"
+    "Hon : \"What door is that? The door is really big.\"\n"
+    "Ball : \"It has a label attached to it as well. It's like there's something written on it.\"\n"
+    ;
+
     printf("\nAct 2 : Open your eyes.\n\n");
-    printf(appoint);
+    printf(sneakin);
     while(process == 0){
         printf("What will they do :\n1 : Hide behind pile of broken chairs\n2 : Make noises meow like cat.\n3 : Throw rocks to distract.\n");
         scanf("%d", &check);
         event_1_flashlight(check);
         is_over();
     }
+    if(over_yet==1){
+        process = 0;
+        printf(headtostairs);
+        while(process == 0){
+            printf("What will they do :\n1 : Send someone to see if anyone is in the room.\n2 : Wait until someone walks out.\n3 : Just walk past, don't pay any attention.\n");
+            scanf("%d", &check);
+            event_2_teacher_on_duty_building(check);
+            is_over();
+        }
+    }
+    if(over_yet==1){
+        process = 0;
+        printf(stairtosixth);
+        while(process == 0){
+            printf("What will they do :\n1 : For honor!!.\n2 : Throwing shoes.\n");
+            scanf("%d", &check);
+            event_3_unknown_in_the_dark(check);
+            is_over();
+        }
+    }
 }
 
-void slowPrint(const char *text) {
-    for (int i = 0; text[i] != '\0'; i++) {
-        if (text[i] == '\n') {
-            usleep(2500000); // หน่วงเวลา 2.5 วินาที หลังขึ้นบรรทัดใหม่
-        }
-        printf("%c", text[i]);
-        fflush(stdout); // อัพเดทข้อมูลที่ถูกบันทึกไว้ใน stdout
-        usleep(50000); // หน่วงเวลา 50 มิลลิวินาที (0.05 วินาที) ระหว่างแต่ละตัวอักษร
-    }
+void Loading(){
+    printf("\n\n");
+    char load[] = "Loading....";
+    slowPrint(load);
+    printf("\n\n");
 }
 
 int continue_story(int num){
     printf("Continue....?\n1 : Yes.\n0 : No.\n");
     scanf("%d", &check);
-    printf("\n\n");
     if(check == 1){
         act++;
         return num = 1;

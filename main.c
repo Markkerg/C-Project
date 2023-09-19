@@ -10,15 +10,15 @@ int main(){
     if( check == 0){
         return 0;
     }
+    Loading();
     while(check == 1){
-        if(process == 0){
-        act1_morning();
-        act1_lunch();
-        act1_evening();
+        if(act == 1){
+        Act_1();
         }
         if(continue_story(check) == 1 && act == 2){
+            Loading();
             act2_behindschool();
-            printf("%d", check);
         }
     }
+    slowPrint("Thank for playing.");
 }
