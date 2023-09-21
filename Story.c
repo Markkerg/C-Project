@@ -159,8 +159,7 @@ void act2_behindschool(){
     "Poom : \"No, there are only two way to go up the building because they have closed all. The other way is that we have to take the elevator.\"\n"
     "Hon : \"Ah, it's hard. Because the teacher on duty and the guard should come and inspect that area often.\"\n"
     "Ball : \"But if we can go up, there won't be any difficulty. Be careful not to get caught.\"\n"
-    "Ton : \"True. So let's go.\"\n\n"
-    "The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\n";
+    "Ton : \"True. So let's go.\"\n\n";
     
     char headtostairs[] = 
     "The guard passed by as if nothing had happened.\n"
@@ -208,8 +207,7 @@ void act2_behindschool(){
     "Hon : \"I'm about to pee. There's hardly any strength in the legs.\"\n"
     "Ball : \"What should we do next?, Ton. Or is this enough?\"\n"
     "Ton : \"I'm afraid too. But having come this far, let's continue.\"\n"
-    "They continued walking until they were almost in front of the duty teacher's building.\n They talked together and came up with a plan to get past the building.\n\n"
-    "Ton : \"Okay, now we're in front of the teacher on duty building.\"\n";
+    "They continued walking until they were almost in front of the duty teacher's building.\n They talked together and came up with a plan to get past the building.\n\n";
 
     char stairtosixth[] = 
     "And then they reached the stairs next to the governing room.\n"
@@ -282,10 +280,9 @@ void act2_behindschool(){
     "Ton : \"Settle conscious. Then come face to face with it.\"\n"
     "Hon : \"What are you going to do?\"\n"
     "Ton : \"If there was a ghost, it would only have one pair of feet. But there are 3 of us, which means we have 3 pairs of feet.\"\n"
-    "Ball : \"That's true. Okay. Let's face it\"\n"
-    "The three of them stood in line in front of the board, preparing to deal with the unknown.\nAnd that mysterious voice was getting closer and closer to them.\n";
+    "Ball : \"That's true. Okay. Let's face it\"\n";
 
-    char waytodestination [] = 
+    char doorofquestion1 [] = 
     "Poom : \"Ouch!, what the hell are you guys doing?\"\n"
     "The thing came out was Poom that was dragged into the darkness.\n"
     "Poom : \"It hurts that you threw it to me.\"\n"
@@ -293,17 +290,117 @@ void act2_behindschool(){
     "Ball : \"How are you? Do you still have all 32 organs?\"\n"
     "Poom : \"I'm fine, my friend.\"\n"
     "Ton : \"OK, let's move on, shall we?\"\n"
-    "They succeeded in continuing down to the 8th floor.\nBut when I was about to continue down to the 7th floor, I found that it was a wall with no way down.\n"
+    "They continuing down to the 8th floor.\nBut when they was about to continue down to the 7th floor, they found that it was a wall with no way down.\n"
     "Ton : \"The way down here is closed again. We have to walk in the same direction as before.\"\n"
     "Ball : \"Wait a minute, there's an unknown door here.\"\n"
     "Hon : \"What door is that? The door is really big.\"\n"
     "Ball : \"It has a label attached to it as well. It's like there's something written on it.\"\n"
+    "Ton : \"What is it written?\"\n"
+    "Ball : \"Those intellectuals who wanted to pass through this gate You must prepare yourself and answer all the questions correctly.\nWhen you are ready, knock on the door 3 times.\"\n"
+    "Hon : \"Retarded door. We'd better go the other way.\"\n"
+    "Suddenly, a thick wall surrounded them in a square with that door.\n"
+    "Hon : \"It imprisoned us. Does that mean we really have to play a guessing game with it?\"\n"
+    "Poom : \"There's no other way. We must try it once.\"\n"
+    "Hon : \"But if we answer incorrectly, what will it do to us? Is it written anywhere or not?\"\n"
+    "Ball : \"No, I can't find it at all.\"\n"
+    "Ton : \"Well, let's play with it a little.\"\n"
+    "Then Ton knocked on the door 3 times. On the door was a board with a message written on it.\n\n";
+
+    char doorofquestion2 [] =
+    "Hon : \"I have 16 feet of fabric, cut 2 feet per day, 8 divided by 2, 8 days for sure,\n      so can I answer it?\"\n"
+    "Ton : \"Wait, I don't think so.\"\n"
+    "Hon : \"Why is 16 divided by 2 equal to 8, right?\"\n"
+    "Ton : \"Yes, but they said how many days it takes to cut the final piece of fabric, right? That's like it takes 7 days.\"\n"
+    "Hon : \"Why 7?\"\n"
+    "Ton : \"On the 7th day, you cut 14 feet, which means there are 2 feet of fabric left. It doesn't have to be cut, right?\"\n"
+    "Poom : \"Oh, right. Answer it now.\"\n"
+    "When Ton answered 7, the door was silent for a moment. After that, the door opened with a new question.\n\n";
+
+    char doorofquestion3 [] =
+    "Ball : \"What's the question? I have a headache.\"\n"
+    "Poom : \"Are you okay? You can sit and rest first.\"\n"
+    "Ball : \"So I take a break for a bit.\"\n"
+    "Ton : \"It's 100 years old but it's only been held 25 times.\n      Is that possible? And arrange it every time and never miss it.\"\n"
+    "Poom : \"I feel strange, like I've encountered this kind of problem before.\"\n"
+    "Ton : \"Really? What is the answer?\"\n"
+    "Poom : \"I'm trying, but it's stuck at the end.\"\n"
+    "Hon : \"February 29\"\n"
+    "Poom : \"Huh. What did you say just now?\"\n"
+    "Hon : \"Every 4 years there is 1 extra day, making the year 366 days. That was February 29th, correct or not?\"\n"
+    "Poom : \"Every 4 years... Oh, yes, like you said.\"\n"
+    "Ton : \"OK, I'm answer now.\"\n"
+    "After answering the door was still as before. and come up with new problems.\n\n";
+
+    char doorofquestion4[] = 
+    "Ton : \"This time it's in English. I don't even know much about it.\"\n"
+    "Hon : \"I'm the same way. It's a word, not a sentence, right?\"\n"
+    "Ton : \"If follow it as written, yes, but how is it possible? Subtracting just one digit it becomes 12.\"\n"
+    "Hon : \"You should know because you are good at English, Poom?\"\n"
+    "Poom : \"I'm thinking.\"\n"
+    "Ton : \"12 What is this? Number of words or something else?\"\n"
+    "Hon : \"12 I can only think of twelve.\"\n"
+    "Ton : \"You're too direct, you don't even think about the quantity or else?\"\n"
+    "Poom : \"Number... 12... Oh, I got it.\"\n"
+    "Ton : \"What is it?\"\n"
+    "Poom : \"It dozens, guys. If it adds s, it means several dozen. If you subtract s, you get a dozen equal to 12. I'll answer now.\"\n"
+    "After Poom answered, the door was silent and there was no response.\n";
+
+    char onewaytogo [] =
+    "Poom : \"Hey, did I answer wrong? Or is there something wrong?\"\n"
+    "But soon the door opened, revealing a white light inside the door that looked like nothing at all.\nThat made Poom feel relieved."
+    "Ton : \"The door has open. Ball we gonna keep going.\"\n"
+    "Ball : \"Okay, let's go.\"\n"
+    "The four of them slowly walked into the door one by one, and when the last person entered, the door closed and disappeared.\n"
+    "Poom : \"Why is it so bright? I can't see anything.\"\n"
+    "Ball : \"My eyes couldn't open them. Has anyone seen anything yet?\"\n"
+    "When everyone on the other side of the door. The bright white light gradually decreased to normal.\nIt thus shows an auditorium with no lights in the room but faintly visible."
+    "Ball : \"Which part of it in our school?\"\n"
+    "Hon : \"It's like an auditorium. There's also a stage.\"\n"
+    "Ton : \"So why did it bring us here? It's a different direction than the one we have to go.\"\n"
+    "Poom : \"Wait a minute in the auditorium, were there ever have a bleacher?"
+    "Ton : \"What are you saying?\"\n"
+    "When they realized this, the room's lights turned on. But the room was filled with unexpected things.\n"
+    "Ball : \"What the fuck? Why is it full of skeletons?\"\n"
+    "Poom : \"It was all over the place, both the bleacher and the ground.\"\n"
+    "Ton : \"Now it seems like the floor has changed. How did it become grass?\"\n"
+    "Hon : \"Really, after looking at it carefully, what should I do next? Do I have to play football with them?\"\n"
+    "Ball : \"Are you crazy. Where is the exit?\"\n"
+    "Ton : \"I don't know either. Is that way?\"\n"
+    "Ball : \"Wait. There's have the way.\"\n"
+    "Ton : \"What do you mean there have a way too?\"\n"
+    "Poom : \"I think there's more than that. Try looking around.\"\n"
+    "When they looked around, they saw that there was a path that could be passed by these skeletons as if it had given way.\n"
+    "Hon : \"There are so many ways. Which way should we choose?\"\n"
+    "Ton : \"Each path has different characteristics. Or is there only one is right way?\"\n"
+    "Poom : \"Probably yes, but which way is the right way?\"\n"
+    "Ton : \"I don't know, let's analyze first what each way is like.\"\n"
+    "Way 1 : There are pieces of rotted wood all over the floor.\n"
+    "Way 2 : There have coins all over the floor.\n"
+    "Way 3 : There are mysterious pieces of paper all over the floor.\n"
+    "Way 4 : There have only ants and various insects running around.\n"
+    "Way 5 : There are incense sticks and candles all over the place.\n"
+    "Ton : \"Let's take a look at each route and see which way to go. Does anyone have any ideas?\"\n"
+    "Ball : \"The road with only ants and insects is not worth going. It's disgusting.\"\n"
+    "Poom : \"As for me, I think we should go in the direction where there are incense sticks and candles.\n       I think it looks like something religious.\"\n"
+    "Hon : \"But what if it happened the opposite result? Actually, it's the path of ghosts.\"\n"
+    "Poom : \"It really thought about it that way. But it was my feeling at first glance.\"\n"
+    "Ton : \"For now, let's not argue. Let's analyze another way. The next way is the way with paper. What kind of paper is it?\"\n"
+    "Poom : \"Is it a death certificate if it comes like this?\"\n"
+    "Ton : \"Maybe so, but can you go look to be sure?\"\n"
+    "Ball : \"I'll go look at it for you.\"\n"
+    "When Ball was moved to see what it was. But it was like there was a thin layer of air blocking it like an illusion.\n"
+    "Ball : \"I tried to walk over and take a look, but it seemed like it was some kind of dimension.\"\n"
+    "Hon : \"Again, since that door?\"\n"
+    "Ton : \"Okay, come back first. Then let's look at another way.\"\n"
+
+
     ;
 
     printf("\nAct 2 : Open your eyes.\n\n");
     printf(sneakin);
     while(process == 0){
-        printf("What will they do :\n1 : Hide behind pile of broken chairs\n2 : Make noises meow like cat.\n3 : Throw rocks to distract.\n");
+        printf("The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\n What should they do?\n");
+        printf("1 : Hide behind pile of broken chairs\n2 : Make noises meow like cat.\n3 : Throw rocks to distract.\n");
         scanf("%d", &check);
         event_1_flashlight(check);
         is_over();
@@ -312,7 +409,8 @@ void act2_behindschool(){
         process = 0;
         printf(headtostairs);
         while(process == 0){
-            printf("What will they do :\n1 : Send someone to see if anyone is in the room.\n2 : Wait until someone walks out.\n3 : Just walk past, don't pay any attention.\n");
+            printf("Ton : \"Okay, now we're in front of the teacher on duty building.\n What should we do?\"\n");
+            printf("1 : Send someone to see if anyone is in the room.\n2 : Wait until someone walks out.\n3 : Just walk past, don't pay any attention.\n");
             scanf("%d", &check);
             event_2_teacher_on_duty_building(check);
             is_over();
@@ -322,12 +420,48 @@ void act2_behindschool(){
         process = 0;
         printf(stairtosixth);
         while(process == 0){
-            printf("What will they do :\n1 : For honor!!.\n2 : Throwing shoes.\n");
+            printf("The three of them stood in line in front of the board, preparing to deal with the unknown.\nAnd that mysterious voice was getting closer and closer to them.\nWhat should they do?\n");
+            printf("1 : Charge!!!.\n2 : Throwing shoes.\n");
             scanf("%d", &check);
             event_3_unknown_in_the_dark(check);
             is_over();
         }
     }
+    if(over_yet==1){
+        process = 0;
+        printf(doorofquestion1);
+        while(process == 0){
+            printf("A tailor has a piece of cloth that is 16 feet long, and he cuts 2 feet of cloth every day.\nHow many days does it take him to cut the last piece of cloth?\nWhat is answer.\n");
+            printf("1 : 7.\n2 : 8.\n3 : 9.\n4 : 0.\n");
+            scanf("%d", &check);
+            event_4_question1(check);
+            is_over();
+        }
+    }
+    if(over_yet==1){
+        process = 0;
+        printf(doorofquestion2);
+        while(process == 0){
+            printf("An old man aged 100 years and a few months. But he's only had 25 birthday parties, even though he's had them since he was born.\nNever missed a single time. Why is that?\nWhat is answer.\n");
+            printf("1 : He forgot to count for 75 years.\n2 : He forgot his age.\n3 : He remembered his birthday incorrectly. So it was counted incorrectly.\n4 : He was born on February 29th.\n");
+            scanf("%d", &check);
+            event_4_question2(check);
+            is_over();
+        }
+    }
+    if(over_yet==1){
+        process = 0;
+        printf(doorofquestion3);
+        while(process == 0){
+            printf("I'm is a 6 letter english word. Subtract one letter and I'm left with 12. What is my word?\nWhat is answer.\n");
+            printf("1 : Twelve.\n2 : Dozens.\n3 : Sibsong.\n4 : Ohf..k.\n");
+            scanf("%d", &check);
+            event_4_question3(check);
+            is_over();
+        }
+    }
+    printf(onewaytogo);
+    
 }
 
 void Loading(){

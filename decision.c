@@ -77,6 +77,95 @@ void event_3_unknown_in_the_dark(int num){
     }
 }
 
+void event_4_question1(int num){
+    if(num == 1){
+        over_yet = 1;
+    } 
+    else if(num == 2){
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    }
+    else if(num == 3){
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    }
+    else{
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    }
+}
+
+void event_4_question2(int num){
+    if(num == 1){
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    } 
+    else if(num == 2){
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    }
+    else if(num == 3){
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    }
+    else{
+        over_yet = 1;
+    }
+}
+
+void event_4_question3(int num){
+    if(num == 1){
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    } 
+    else if(num == 2){
+        over_yet = 1;
+    }
+    else if(num == 3){
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    }
+    else{
+        char wrong[] = 
+        "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
+        "Door : \"You gave the wrong answer, you fool.\"\n"
+        "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
+        printf(wrong);
+        over_yet = 0;
+    }
+}
 
 void slowPrint(const char *text) {
     for (int i = 0; text[i] != '\0'; i++) {
