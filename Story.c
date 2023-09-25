@@ -5,7 +5,7 @@
 void slowPrint(const char *text);
 void is_over();
 int continue_story(int num);
-int check,act=1,process=0,retry=0;
+int check,act=1,process=0;
 
 void Act_1(){
     char di_act1[] = 
@@ -115,12 +115,12 @@ void Act_1(){
     "Ton : \"Let's keep it real, haha.\"\n"
     "Poom : \"Let's go home. See you at the appointed time.\"\n"
     "Hon : \"See you soon.\"\n"
-    "After that, they went their separate ways and went home. Do their own activities while waiting for your appointment time.\nBut did you know that while they were meeting to plan, someone overheard what they were talking about?\n\n";
+    "After that, they went their separate ways and went home. Do their own activities while waiting for your appointment time.\n\n";
     printf("\nAct 1 : Curiosity is the cause.\n\n");
     printf(di_act1);
 }
 
-void act2_behindschool(){
+void act2_1_behindschool(){
     char sneakin[] = 
     "21:27 At the meeting point behind the school.\n"
     " ? : \"Do you think it'll come?\"\n"
@@ -280,7 +280,7 @@ void act2_behindschool(){
     "Ton : \"Settle conscious. Then come face to face with it.\"\n"
     "Hon : \"What are you going to do?\"\n"
     "Ton : \"If there was a ghost, it would only have one pair of feet. But there are 3 of us, which means we have 3 pairs of feet.\"\n"
-    "Ball : \"That's true. Okay. Let's face it\"\n";
+    "Ball : \"That's true. Okay. Let's face it\"\n\n";
 
     char doorofquestion1 [] = 
     "Poom : \"Ouch!, what the hell are you guys doing?\"\n"
@@ -373,7 +373,7 @@ void act2_behindschool(){
     "Hon : \"There are so many ways. Which way should we choose?\"\n"
     "Ton : \"Each path has different characteristics. Or is there only one is right way?\"\n"
     "Poom : \"Probably yes, but which way is the right way?\"\n"
-    "Ton : \"I don't know, let's analyze first what each way is like.\"\n"
+    "Ton : \"I don't know, let's discuss first what each way is like.\"\n"
     "Way 1 : There are pieces of rotted wood all over the floor.\n"
     "Way 2 : There have coins all over the floor.\n"
     "Way 3 : There are mysterious pieces of paper all over the floor.\n"
@@ -384,22 +384,28 @@ void act2_behindschool(){
     "Poom : \"As for me, I think we should go in the direction where there are incense sticks and candles.\n       I think it looks like something religious.\"\n"
     "Hon : \"But what if it happened the opposite result? Actually, it's the path of ghosts.\"\n"
     "Poom : \"It really thought about it that way. But it was my feeling at first glance.\"\n"
-    "Ton : \"For now, let's not argue. Let's analyze another way. The next way is the way with paper. What kind of paper is it?\"\n"
+    "Ton : \"The next way is the way with paper. What kind of paper is it?\"\n"
     "Poom : \"Is it a death certificate if it comes like this?\"\n"
     "Ton : \"Maybe so, but can you go look to be sure?\"\n"
     "Ball : \"I'll go look at it for you.\"\n"
     "When Ball was moved to see what it was. But it was like there was a thin layer of air blocking it like an illusion.\n"
     "Ball : \"I tried to walk over and take a look, but it seemed like it was some kind of dimension.\"\n"
     "Hon : \"Again, since that door?\"\n"
-    "Ton : \"Okay, come back first. Then let's look at another way.\"\n"
+    "Ton : \"Okay, come back first. Then let's look at another way. Next is the way have with pieces of rotted wood.\"\n"
+    "Hon : \"There probably isn't anything. Just a piece of ordinary wood.\"\n"
+    "Poom : \"Probably so, because what we see now may just be an illusion.\"\n"
+    "Ball : \"Another way is the one with coins. Look, it's just an ordinary baht coin.\"\n"
+    "Ton : \"But it can be interpreted as money from a ghost's mouth.\n      Relatives will put it in the dead person's mouth before putting the body in the coffin.\"\n"
+    "Ball : \"Why did he put it in? I don't understand.\"\n"
+    "Ton : \"It is believed that the deceased will have money with them to use in the afterlife.\"\n"
+    "Ball : \"If that's the case, it's disgusting. I don't know what the damn coin has been through.\"\n"
+    "Ton : \"That's why we have to decide on the right path.\n      Well, have you all decided yet? Let's choose our next path.\"\n"
+    "When the time to choose comes, what will their path be next? You have to choose it for them.\n\n";
 
-
-    ;
-
-    printf("\nAct 2 : Open your eyes.\n\n");
+    printf("\nAct 2.1 : Open your eyes.\n\n");
     printf(sneakin);
     while(process == 0){
-        printf("The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\n What should they do?\n");
+        printf("The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\nWhat should they do?\n");
         printf("1 : Hide behind pile of broken chairs\n2 : Make noises meow like cat.\n3 : Throw rocks to distract.\n");
         scanf("%d", &check);
         event_1_flashlight(check);
@@ -460,8 +466,32 @@ void act2_behindschool(){
             is_over();
         }
     }
-    printf(onewaytogo);
-    
+    if(over_yet == 1)
+        printf(onewaytogo);
+}
+
+void act2_2_roadtothatroom(){
+    char truthofway[] = 
+    "Ton : \"Well, it's time for us to choose our path. But before going in, I'd like to say something.\"\n"
+    "Ton made a serious face and looked at his friends' faces.\n"
+    "Ball : \"What's wrong with you all of a sudden? What are you going to say?\"\n"
+    "Ton : \"I want to say it right now. I want to thank you all for walking along this journey with me until now.\"\n"
+    "Poom : \"Oh, drama.\"\n"
+    "Ton : \"It was my curiosity and selfishness that brought you here.\n      The reason I was able to arrive was because you guys were waiting with me.\n      There are currently 5 paths that will determine the outcome of our decisions.\n      No matter what happens, we will get through it together.\"\n"
+    "Hon : \"Haha, what are you talking about now? I came with you because we are curious too.\"\n"
+    "Ball : \"Even though there were many events that happened, it was fun.\"\n"
+    "Poom : \"Don't think too much. We're friends, aren't we?\"\n"
+    "When Ton heard the three of them say that, he couldn't hold back his tears.\n"
+    "Ball : \"You're crying. Haha.\"\n"
+    "Ton wipes away the tears that flow.\n"
+    "Ton : \"Nothing, let's make a choice.\"\n\n"
+    "Ton : \"Our next path is ....\"\n"
+    "Way 1 : There are pieces of rotted wood all over the floor.\nWay 2 : There have coins all over the floor.\nWay 3 : There are mysterious pieces of paper all over the floor.\nWay 4 : There have only ants and various insects running around.\nWay 5 : There are incense sticks and candles all over the place.\n";
+
+    printf("\nAct 2.2 : Truth of Ways.\n\n");
+    printf(truthofway);
+    scanf("%d", &check);
+    event_choose_your_way(check);
 }
 
 void Loading(){
