@@ -168,10 +168,10 @@ void event_4_question3(int num){
 }
 
 void event_choose_your_way(int num){
-    printf("Once they had decided on a route, they headed straight away.\nIn front of them was the path they had chosen, but behind the path no one knew anything.");
+    printf("\nOnce they had decided on a route, they headed straight away.\nIn front of them was the path they had chosen, but behind the path no one knew anything.");
     printf("Ton : \"Let's go, guys.\"\nThey all walked into the path one by one.\nAnother side of the dimension.\n");
     if(num == 1){
-        char way1[] = 
+        char way[] = 
         "Ton : \"Are we all together? So is anyone get hurt?\"\n"
         "Poom : \"I'm still here and safe. You okay, Hon?.\"\n"
         "Hon : \"I'm alright. Is Ball alright?\"\n"
@@ -222,23 +222,68 @@ void event_choose_your_way(int num){
         "The girl, both scared and sad, realized the hopelessness she faced.\nThe girl decided to abandon everything and wish for happiness for herself and her grandmother in the next life.\n"
         "The four of them could only stand and watch the scene in front of them without being able to do anything.\nThis made them unable to hold back their tears and feel great heartache.\n"
         "Hon : \"What is this crazy thing? Why did it let me see something like this?\"\n"
-        "Ton : \"Damn, so sad. I wish that girl to be as happy in her next life.\"\n"
-        "Then time sped up and took the four of them somewhere.\n"
-        "Poom : \"Oh, what the fuck? Did we get warped again?\"\n"
-        "Ton : \"That's probably right. Where did we get teleported to?\"\n"
-        "Hon : \"Hey guys, this is our school.\"\n"
-        "Ton : \"Oh, that's true. And what part of the school are we in?\"\n"
-        "Ball : \"A balcony walkway like this. Hmm. You guys look at that room.\"\n"
-        "Everyone turned to look at one of the classrooms that had light shining out of it.\n"
-        "Ton : \"We've arrived, right? On the 6th floor.\"\n"
-        "Poom : \"I don't know, but please, I'm so tired.\"\n"
-        "Ball : \"There was something unknown in the shape of a person walking out of the room.\"\n"
-        "Ton : \"Everyone, stay sharp!!\"\n"
-        "The light in the room shone through something like a shadow of a person outside the room.\nAnd that thing was walking out until it appeared in front of them.\n"
-        "Teacher : \"What are you all doing here so late at night?\"\n\n";
+        "Ton : \"Damn, so sad. I wish that girl to be as happy in her next life.\"\n";
     }
     else if(num == 2){
-
+        char way[] =
+        "Ton : \"Anyone hurt?\"\n"
+        "Poom : \"I'm fine. What about the other two\"\n"
+        "Hon : \"I'm here but where is Ball?\"\n"
+        "The three of them looked at each other and started to worry.\nBecause where they were right now was a construction site.\n"
+        "Hon : \"Where is your ball?\"\n"
+        "Ball : \"I'm here.\"\n"
+        "When the three of them heard that response, they immediately ran over.\n"
+        "Hon : \"Why are you here? We are worried.\"\n"
+        "Ball : \"I don't know, it's like I was kicked and sent here.\n       But come look at the place where they built it.\"\n"
+        "Poom : \"Why? Hmm?\"\n"
+        "Ton : \"This area is like our school.\"\n"
+        "Hon : \"Probably yes, but is the area like this?\"\n"
+        "Poom : \"It may have been a long time ago. Now we don't even know what year it is.\"\n"
+        "? : \"The area here is good. It's very wide and has a lot of usable space.\"\n"
+        "? : \"Yes, I am the owner of this place.\"\n"
+        "While they were talking, the sounds of two people talking could be heard. Make them turn and look.\n"
+        "Man : \"This area right here. I received it as an inheritance but I don't know what to use it for.\nSo I'm offering it for sale to you.\"\n"
+        "Uncle : \"Haha, I really like this area.\n        I'm glad you offered me this low price because I'm going to build the greatest industry in this province.\"\n"
+        "Man : \"I was happy to hear that. But if I want to add a little more\"\n"
+        "Uncle : \"No matter how much you want to add, take it. I'm a generous person.\"\n"
+        "Man : \"Thank you very much.\"\n"
+        "Ball : \"The dimension will tell me the business talk of someone I don't know, for what reason?\"\n"
+        "Ton : \"I don't know, but hey, it seems like the clouds are moving faster.\"\n"
+        "In the blink of an eye, time turned into night. And the location changed to being inside someone's house.\n"
+        "Hon : \"Are we traveling through time?\"\n"
+        "Poom : \"I don't know, but in front of me there was a uncle during the daytime.\"\n"
+        "Ton : \"Is he talking on the phone? Let's go listen a little bit.\"\n"
+        "Uncle : \"Is the target in range? OK. That's him. Go ahead and shoot it.\"\n"
+        "Ball : \"What? Who shot what?\"\n"
+        "Hon : \"I don't know.\"\n"
+        "In a split second, they were teleported into someone's car.\n"
+        "Ball : \"We got warped again. Now we're at that guy's car.\"\n"
+        "Poom : \"Talking on the phone while driving. It's dangerous.\"\n"
+        "Man : \"We're rich. I earned a lot. How did I get it? I tricked to selling the land to that idiot.\n      He also believes that this is the inheritance that I received."
+        "Hon : \"I want to punch this motherfucker. How can you do this?\"\n"
+        "Poom : \"Even if you're angry, you won't be able to punch him. So please stay calm.\"\n"
+        "Hon : \"Damn it!!\"\n"
+        "Man : \"And that area over there? It belongs to someone I don't know.\n      I impersonated it and made fake documents...\"\n"
+        "At that moment, a bullet shot through the car's window and hit the man in the head.\nThis caused the car he was driving to lose control and crash into a tree on the side of the road."
+        "Ball : \"What the fuck is this? What kind of event is this?\"\n"
+        "Ton : \"Or was it the uncle from just now who gave the order to shoot?\"\n"
+        "Poom : \"Even though what this man did was wrong, was it necessary to kill each other?\"\n"
+        "And immediately they were teleported again.\n"
+        "Ton : \"It's like we're warping again. And now it's raining...oh.\"\n"
+        "Hon : \"What story will the dimensions convey?\"\n"
+        "Ton : \"I don't know, but why aren't there any workers? Where have they all gone?\"\n"
+        "Poom : \"You guys come look at this.\"\n"
+        "When they turned to look, they saw that there was a sign on the board that said about the work.\nIt was found that he had been working for 204 days and the number of deaths was more than 23 people.\n"
+        "Poom : \"More than 20 people have died at this construction site. What the fuck is this?\"\n"
+        "? : \"It's all gone. What is this, this area? Does it have a mystery or what?\n   Why isn't it finished? Why? Why?\"\n"
+        "In the midst of the raging rain, there was a man crying in sorrow.\nAnd that man was the nameless uncle whose name they didn't know.\n"
+        "Uncle : \"My factory, my money, my business, everything was destroyed. Why did happen!!!\"\n"
+        "Hon : \"That's that uncle. Don't you feel sorry for the workers who died?\n      You only worried about myself. Damn it.\"\n"
+        "Ball : \"Hey, hey, what is this uncle going to do?\"\n"
+        "Poom : \"It gun!!!. Don't tell me next!!.\"\n"
+        "Suddenly, that uncle fired a shot at his own head. and the body fell down and became lifeless.\n"
+        "Poom : \"Again, this too much. What story is it trying to convey? I don't understand.\"\n"
+        "Ton : \"No one understands. The story was cut like this. I don't know where it came from...\"\n";
     }
     else if(num == 3){
 
@@ -249,6 +294,7 @@ void event_choose_your_way(int num){
     else{
 
     }
+    printf("Then time sped up and took the four of them somewhere.\nPoom : \"Oh, what the fuck? Did we get warped again?\"\nTon : \"That's probably right. Where did we get teleported to?\"\nHon : \"Hey guys, this is our school.\"\nTon : \"Oh, that's true. And what part of the school are we in?\"\nBall : \"A balcony walkway like this. Hmm. You guys look at that room.\"\nEveryone turned to look at one of the classrooms that had light shining out of it.\nTon : \"We've arrived, right? On the 6th floor.\"\nPoom : \"I don't know, but please, I'm so tired.\"\nBall : \"There was something unknown in the shape of a person walking out of the room.\"\nTon : \"Everyone, stay sharp!!\"\nThe light in the room shone through something like a shadow of a person outside the room.\nAnd that thing was walking out until it appeared in front of them.\nTeacher : \"What are you all doing here so late at night?\"\n\n");
 }
 
 void slowPrint(const char *text) {
