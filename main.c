@@ -1,9 +1,8 @@
 #include<stdio.h>
-#include"character.c"
 #include"Story.c"
 
 int main(){
-    printf("Welcome to the game \"Ghost, haunted spirit\"\nPress 1 : Start game.\nPress 0 : Exit.\n");
+    printf("Welcome to the game \"Ghost Room\"\nPress 1 : Start game.\nPress 0 : Exit.\n");
     scanf("%d", &check);
     if( check == 0){
         return 0;
@@ -19,6 +18,10 @@ int main(){
             if(continue_story(check) == 1 && act == 3){
                 Loading();
                 act2_2_roadtothatroom();
+                if(continue_story(check) == 1 && act == 4){
+                    Loading();
+                    act3_endingofstory();
+                }
             }
         }
     }

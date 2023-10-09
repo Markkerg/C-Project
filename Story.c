@@ -466,8 +466,10 @@ void act2_1_behindschool(){
             is_over();
         }
     }
-    if(over_yet == 1)
+    if(over_yet == 1){
+        process = 0;
         printf(onewaytogo);
+    }
 }
 
 void act2_2_roadtothatroom(){
@@ -492,6 +494,183 @@ void act2_2_roadtothatroom(){
     printf(truthofway);
     scanf("%d", &check);
     event_choose_your_way(check);
+}
+
+void act3_endingofstory(){
+    char truthofroom[] =
+    "Teacher : \"What are you all doing here so late at night?\"\n"
+    "Ton : \"Teacher Jom?\"\n"
+    "Teacher : \"But let it be. Students enter the room first.\"\n"
+    "They saw the worried face of the teacher. So they entered the room without saying anything.\nWhen they entered the room, they found that a guard was also in the room.\n"
+    "Hon : \"How did Uncle Chai come to live here?\"\n"
+    "Uncle Chai is the guard at this school.\n"
+    "U.Chai : \"I'm always here. Is there something wrong?\"\n"
+    "Poom : \"Are you in this room all the time? If so, at the wall behind the school....\"\n"
+    "T.Jom : \"Can you all tell me? What are you guys doing this late at school?\"\n"
+    "Hon : \"It's like... we come to find things at night.\"\n"
+    "Ton : (My friend is good at lying. Awesome, friend.)\n"
+    "T.Jom : \"Tell the truth, don't lie.\"\n"
+    "Poom : \"Ton brought we here to hunt ghosts.\"\n"
+    "Ton : \"Oh bastard, you're have a big mouth.\"\n"
+    "T.Jom : \"I already knew what you were doing late at night. But none of you were hurt, right?\"\n"
+    "Ton : \"No, we're fine, but I have a question. Why are you and Uncle Chai in this room? Because...\"\n"
+    "T.Jom : \"Is it a haunted room that turns on its own lights at night?\"\n"
+    "Ton : \"Yes.\"\n"
+    "Teacher Jom sighed and began to tell the story.\n"
+    "T.Jom : \"There were only 4 people who came, right? No one besides these came.\n        Then the teacher will briefly tell you the history of our school.\"\n"
+    "\"Going back to 26 years ago when the teacher was still a trainee teacher.\nA teacher came to train at this school, and one day he noticed something strange.\"\n"
+    "\"For example, seeing a person whose body was engulfed in flames walking in front of the room.\nSome people have conditions that are not like people walking in school.\"\n"
+    "\"When I saw this, I was shocked and searched for information and history of the school\nand found that this area of land was used to build the school.\"\n"
+    "\"It was initially obtained unfairly by the desire of powerful people to build factories.\nAnd the story after that was followed by many stories that destroyed people's lives.\"\n"
+    "\"Through many stories, this school was finally able to be built,\nbut the spirits of those people still cling to this place.\"\n"
+    "\"This is the reason why our school probably has a lot of stories about ghost hooves.\nAll these stories are like this.\"\n"
+    "Ball : \"Does Uncle Chai know about this too?\"\n"
+    "U.Chai : \"Of course, I was here before Teacher Jom.\"\n"
+    "After Teacher Chom finished telling the story Ton raised his hand and asked.\n"
+    "Ton : \"Teacher, what does it have to do with this room?\n      What I heard is that this room is a haunted room.\"\n"
+    "T.Jom : \"There are no ghosts in this student room and it is the only room that does not.\"\n"
+    "Hon : \"Why, what does this room have?\"\n"
+    "T.Jom : \"It's nothing at all. And now what are you going to do?\"\n"
+    "Ton : \"I don't know. After knowing the truth, I don't know what to do next.\"\n"
+    "T.Jom : \"Now you have a choice between waiting here in this room or going home.\n        You guys can talk first and then tell me.\"\n"
+    "They turned to face each other and discussed what to do next.\n"
+    "Ton : \"We'll wait here until morning or we'll go home.\"\n"
+    "Poom : \"It's almost midnight now. If you wait, it's only another 6 hours.\"\n"
+    "Ball : \"But I want to go home. I'm so scared that I want to go home and sleep.\"\n"
+    "Ton : \"So let's vote on what we'll choose, okay?\"\n"
+    "When they voted, they came to the conclusion that.\n"
+    "Ton : \"Teacher Jom, we will be waiting here.\"\n"
+    "T.Jom : \"If you choose to stay here, that's fine.\n        But Uncle Chai and I had to go out and inspect other places as part of our duty. So you can live by yourself, right?\"\n"
+    "Ton : \"Yes, no problem.\"\n"
+    "Before Teacher Jom walks out He said in the end that\n"
+    "T.Jom : \"I forgot to tell you. The door will be closed and no matter what happens,\n        don't open it until morning. Do you understand?\"\n"
+    "Ton : \"Yes, but won't you come back here?\"\n"
+    "T.Jom : \"No, Uncle Chai and I will go to the teacher's building.\n        So do as I tell you strictly and except there is a necessary reason.\"\n"
+    "The four of them just nodded and looked at the door that slowly closed.\n"
+    "Poom : \"Have to wait another 6 hours. What should we do?\"\n"
+    "Hon : \"Do you play games? Everyone has a mobile phone.\"\n"
+    "Ball : \"Let's play this game. It can be played together too.\"\n"
+    "Poom : \"What's the name of the game? Let's take a look.\"\n"
+    "The four of them played games to pass the time. When the game started for a while,\noutside the room there was a knock on the door and someone said..\n"
+    "? : \"Student, I forgot something in the room. Can you please open the door?\"\n"
+    "Hon : \"Hmm, it seems like the teacher forgot something. I'll go open the door for a moment.\"\n"
+    "Poom : \"Wait a minute, Hon, have you forgotten what the teacher said?\"\n"
+    "Hon's hand holding the door latch suddenly stopped for a moment."
+    "Hon : \"It's true, I forgot.\"\n"
+    "Poom : \"Absolutely do not open it at all. No matter what happens\"\n"
+    "But the sound outside the room continued to make noise.\n"
+    "? : This is Teacher Jom. Please open it. I really forgot something.\"\n"
+    "Hon : \"I'm starting to think he's the real teacher.\"\n"
+    "Ton : \"Please don't, or we'll all die.\"\n"
+    "Ball : \"Hon, don't listen. Come back, friends.\"\n\n";
+
+    char untilmorning[] =
+    "Ball : \"Come back here quickly, friend.\"\n"
+    "Hon : \"Holy shit, I almost got tricked.\"\n"
+    "Poom : \"Good, just almost unopened As long as it's not open, we're still safe.\"\n"
+    "Ton : \"Okay, let's continue playing the game. Let's get through this night together.\"\n"
+    "01:09\n"
+    "Hon : \"Our phone's battery is dead. What should I do?\"\n"
+    "Poom : \"I don't know, but I'm really sleepy right now. Shall we sleep?\"\n"
+    "Ball : \"That's good. I'm sleepy too.\"\n"
+    "Ton : \"So I'm going to turn off the light.\"\n"
+    "Ton went to turn off the lights and the room became dark.\nThe four of them then gathered in front of the class where there was enough space for them to sleep.\nThen they started to sleep.\n"
+    "02:21\n"
+    "Ball woke up in the middle of the night and got up. He found that his friends were sleeping.\nSo he lay down again, but when he looked at the end of the room, he saw that there was someone watching them.\n"
+    "Ball : \"What is that? Why it looking at me? Go away.\"\n"
+    "He picked up the amulet he had prepared and clasped his hands in prayer for what he saw to disappear.\nBut as he looked, the thing was still there, causing him to poke his friend next to him.\n"
+    "Ball : \"Hon, are you awake?\"\n"
+    "Hon : \"....\"\n"
+    "Ball : \"This guy is in such a deep sleep, I forgot. Is Poom still awake?\"\n"
+    "Poom : \"....\"\n"
+    "Ball : \"There's only one person left. Ton, are you awa...\"\n"
+    "When he looked at Ton, he found that Ton was awake, but Ton had signaled to him to be quiet.\nand started whispering to each other\n"
+    "Ball : \"Are you see same like me, right?\"\n"
+    "Ton : \"Yes, I saw it, but I didn't know what it was.\"\n"
+    "Ball : \"So what next? I'm afraid.\"\n"
+    "Ton : \"Poom has a flashlight. How about you and me get up and look at it together.\"\n"
+    "Ball : \"Ok.\"\n"
+    "Ton picked up Poom's flashlight and stood up with the ball. And when Ton turned on the flashlight to look at the end of the room, he found that.\n"
+    "Ton : \"Damn, the flashlight didn't turn on. We probably had to walk closer to take a look.\"\n"
+    "Ball : \"You go first.\"\n"
+    "The two of them slowly walked closer and closer to the thing. It shows people's faces clearly.\nUntil we got very close, we found that it was just a sculpture with a human face used as a model for the drawing.\n"
+    "Ton : \"I was completely shocked. It was actually just a statue.\"\n"
+    "Ball : \"I'm about to pee. It's so scary. Oh.\"\n"
+    "Ton : \"What's wrong with you?\"\n"
+    "Ball : \"I want to pee. Go to the toilet with me.\"\n"
+    "Ton : \"We're not allowed to open the door.\"\n"
+    "Ball : \"That's right, but if it's necessary. It probably doesn't matter.\"\n"
+    "Ton : \"Fine, let go and be careful.\"\n"
+    "Then the two of them walked out of the room and went to the bathroom.\n"
+    "02:56\n"
+    "Poom : Ouch!! What the heck.\n"
+    "Hon's arm flickered and hit Poom. Therefore causing Poom to wake up.\n"
+    "Poom : \"What with your position to sleep. What time is it? I forget that our phone battery ran out. Oh, where did the other two go?\"\n"
+    "When Phum got up and looked around the room, there was no sign of Ton or Ball.\nTherefore became worried. After that, there was a knock at the door.\n"
+    "Poom : (Who's knocking? Or will it be those two? But I don't think that's the case.)\n"
+    "? : \"Poom, please open the door for me and the ball. I can't go in.\"\n"
+    "Poom : (Those two people weren't there or they went out of the room and couldn't get in?)\n"
+    "Since Poom had just woken up, he couldn't think of much. he chose to wake up Hon first.\n"
+    "Poom : \"Hon, something has happened. Get up and help me.\"\n"
+    "Hon : \"....\"\n"
+    "Poom : \"Shit, you're probably dead. Okay, what should I do?\"\n"
+    "The knocking had begun again, but it was loud and rapid.\n"
+    "? : \"Poom, is there somethings outside. Hurry and open it for me. Quickly!!\"\n"
+    "Poom : (The teacher told me not to open it, but those two weren't here either.\n       What should I do? Let's take a chance and see.)\n\n";
+
+    char endofstory[] =
+    "The noise at the door had quietened and there was no sound at all. Makes Poom sigh after going through the events.\n But suddenly there was a sound as the door at the back of the room opened.\n"
+    "Poom : (Wait, there are two ways here? Don't tell me it comes in the other way. Shit.)\n"
+    "And when the door behind opened...\n"
+    "Ton : \"Oh, Poom, you're awake. Why aren't you awake?\"\n"
+    "Poom : \"Sigh, I thought they had come in already.\"\n"
+    "Ton : \"What do you mean?\"\n"
+    "Poom : \"Nothing. And, where have you guys gone?\"\n"
+    "Ton : \"I take Ball to the toilet. So why did you wake up?\"\n"
+    "Poom : \"It's just Hon. He's struggling. Come on, let's go back to sleep.\"\n"
+    "They went back to sleep and the time ticked until the birds began to chirp, signaling the arrival of morning.\n"
+    "06:13\n"
+    "Ton : \"Yawning. What time is it?\"\n"
+    "Ton woke up first and got up to check things. When he saw three of his friends sleeping together,\nhe was relieved and went to open the window. Image of soft morning sunlight\nThe sun is rising and the birds are leaving their nests.\n"
+    "Ton : \"It's really beautiful. Really lucky to have survived.\"\n"
+    "Poom : \"Yes, we can do it when we are together.\"\n"
+    "Ball : \"When monkeys unite it will become strong. Is that right?\"\n"
+    "Hon : \"This must be celebrated. Do you want to eat grilled pork this evening?\"\n"
+    "The morning time at school was quiet with the laughter of 4 people who had gone through many events together.\nThe story after that, the four of them went back home to change clothes and return to school as usual that day,\nand not long after that, they graduated from this school. The stories of that night were just the four of them.\nUncle Chai and Teacher Chom who know.....eh.....Teacher Chom....? But who is Teacher Chom?\nThere's no need to know. Just knowing this name is enough.\n"
+    "3 years later at a temple\n"
+    "? : \"Have you guys brought all your stuff yet?\"\n"
+    "? : \"I think that's all. Let's go.\"\n"
+    "Four people walked in to offer alms to the monks and walked out to a stupa.\n"
+    "? : \"We're here, teacher. Although, We're a little late.\"\n"
+    "? : \"If that day we didn't have a teacher to help us. I don't know what it will be like. Thank you very much.\"\n"
+    "? : \"Going back to that time, there were many things. I miss it.\"\n"
+    "? : \"Well, we went through a lot together that day.\n    But if I go back and do it again, I won't take it anymore, haha.\"\n"
+    "? : \"Haha me too. So we're just here to visit. We're taking leave.\"\n"
+    "? : \"The four of them paid their respects again and walked away.\"\n"
+    "Completely End.\n";
+
+    printf("\nAct 3 : Wait Or Exit.\n\n");
+    printf(truthofroom);
+    while (process == 0){
+        printf("Hon : \"What should I do? Open or not open?\"\n1 : Open the door.\n2 : Do not open the door.\n");
+        scanf("%d", &check);
+        event_5_first_attempt(check);
+        is_over();
+    }
+    if(over_yet==1){
+        process = 0;
+        printf(untilmorning);
+        while(process == 0){
+            printf("Poom : I choose to...\n");
+            printf("1 : Open the door.\n2 : Do not open.\n");
+            scanf("%d", &check);
+            event_6_confused(check);
+            is_over();
+        }
+    }
+    if(over_yet == 1){
+        printf(endofstory);
+    }
 }
 
 void Loading(){

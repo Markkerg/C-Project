@@ -171,7 +171,7 @@ void event_choose_your_way(int num){
     printf("\nOnce they had decided on a route, they headed straight away.\nIn front of them was the path they had chosen, but behind the path no one knew anything.");
     printf("Ton : \"Let's go, guys.\"\nThey all walked into the path one by one.\nAnother side of the dimension.\n");
     if(num == 1){
-        char way[] = 
+        char way1[] = 
         "Ton : \"Are we all together? So is anyone get hurt?\"\n"
         "Poom : \"I'm still here and safe. You okay, Hon?.\"\n"
         "Hon : \"I'm alright. Is Ball alright?\"\n"
@@ -225,7 +225,7 @@ void event_choose_your_way(int num){
         "Ton : \"Damn, so sad. I wish that girl to be as happy in her next life.\"\n";
     }
     else if(num == 2){
-        char way[] =
+        char way2[] =
         "Ton : \"Anyone hurt?\"\n"
         "Poom : \"I'm fine. What about the other two\"\n"
         "Hon : \"I'm here but where is Ball?\"\n"
@@ -295,6 +295,37 @@ void event_choose_your_way(int num){
 
     }
     printf("Then time sped up and took the four of them somewhere.\nPoom : \"Oh, what the fuck? Did we get warped again?\"\nTon : \"That's probably right. Where did we get teleported to?\"\nHon : \"Hey guys, this is our school.\"\nTon : \"Oh, that's true. And what part of the school are we in?\"\nBall : \"A balcony walkway like this. Hmm. You guys look at that room.\"\nEveryone turned to look at one of the classrooms that had light shining out of it.\nTon : \"We've arrived, right? On the 6th floor.\"\nPoom : \"I don't know, but please, I'm so tired.\"\nBall : \"There was something unknown in the shape of a person walking out of the room.\"\nTon : \"Everyone, stay sharp!!\"\nThe light in the room shone through something like a shadow of a person outside the room.\nAnd that thing was walking out until it appeared in front of them.\nTeacher : \"What are you all doing here so late at night?\"\n\n");
+}
+
+void event_5_first_attempt(int num){
+    if(num == 1){
+        char open[] = 
+        "When Hall opened the door, he found that There was nothing on the other side of the door,\nwhich made me feel relieved. But behind him, there was the sound of gunfire behind him,\nand when he turned around.\n"
+        "Hon : \"Oh no.\"\n"
+        "In front of him was a man holding a gun and the corpses of his friends who had been shot silently.\n"
+        "Man : \"I just forgot to shoot someone. Thank you for opening the door for me and goodbye.\"\n";
+        printf(open);
+        over_yet = 1;
+    } else {
+        char notopen[] =
+        "Hall chose not to open it and backed away from the door.\nBut on the other side of the door, he started pounding on the door harder and harder. Along with saying....\n"
+        "? : \"Don't let me go in. You brats, I'm going to shoot you all.\"\n";
+        printf(notopen);
+        over_yet = 0;
+    }
+}
+
+void event_6_confused(int num){
+    if(num == 1){
+        char open[] =
+        "When Bhumi opened the door, he found a man standing covered in blood.\n"
+        "Man : \"I thank you very much. If you don't open it, I will definitely die.\n      Even though I'm already dead, haha. But it would be better if you died with me.\"\n"
+        "The man then grabbed Phum's head and twisted Phum's neck, causing Poom to die.\n";
+        printf(open);
+        over_yet = 1;
+    } else {
+        over_yet = 0;
+    }
 }
 
 void slowPrint(const char *text) {
