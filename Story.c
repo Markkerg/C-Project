@@ -2,9 +2,9 @@
 #include<unistd.h>
 #include"decision.c"
 
-void slowPrint(const char *text);
+void inFramePrint(const char *text);
 void is_over();
-int continue_story(int num);
+void continue_story();
 int check,act=1,process=0;
 
 void Act_1(){
@@ -20,7 +20,7 @@ void Act_1(){
     "Hon : \"Because of this, maybe we can be friends.\"\n"
     "Ton : \"I just realized. Have you guys ever heard the myth of the 6th floor at our school?\"\n"
     "Ball : \"What kind of myth is this? A myth that fools my children. I don't want it.\"\n"
-    "Ton : \"The myth is that there is a room on the 6th floor where at night the room lights turn on by themselves.\n      And when you look into the room, you will find that there are students all over the room, but the characteristics of the students found are different.\"\n"
+    "Ton : \"The myth is that there is a room on the 6th floor where at night the room lights turn on by themselves. And when you look into the room, you will find that there are students all over the room, but the characteristics of the students found are different.\"\n"
     "Poom : \"Does our school organize night classes? Or how about a pajama party in that room, haha.\"\n"
     "After that, Ton's face became solemn and he said seriously.\n"
     "Ton : \"Everyone who saw it in the room You will see that they are lifeless, some have beachheads, some have missing arms, some have blood all over their bodies.\"\n"
@@ -31,7 +31,7 @@ void Act_1(){
     "Ton's words caused the group's atmosphere to fall into silence for a while. And it was shattered by the sound of the school's buzzer in line.\n"
     "Poom : \"Just forget it. Come on, let's get in line first, then we'll talk about it.\"\n"
     "Hon : \"Okay, let's go get in line first.\"\n"
-    "They lined up and didn't talk about it at all. Until the time passed until lunch break.\n\n"
+    "They lined up and didn't talk about it at all. Until the time passed until lunch break.\n"
     
     "12:06 At the marble table under the school building.\n"
     "Hon : \"Sign!, why does Teacher Preecha give so much homework?\"\n"
@@ -83,7 +83,7 @@ void Act_1(){
     "12:57 The school bell rang.\n"
     "Hon : \"Okay, let's go to the classroom.\"\n"
     "Poom : \"Alright, we'll take about it in the evening.\"\n"
-    "Then they went up to their room to continue studying in the afternoon. and wait until after school in the evening\n\n"
+    "Then they went up to their room to continue studying in the afternoon. and wait until after school in the evening\n"
     
     "After school, they gathered together at the same marble table. To discuss and arrange things to do tonight.\n"
     "Ball : \"So what's the plan?\"\n"
@@ -91,7 +91,7 @@ void Act_1(){
     "Once again, Ton got hit on the head by Poom.\n"
     "Ton : \"Ouch!!, sorry.\"\n"
     "Poom : \"We were joined then. Be little more serious.\"\n"
-    "Ton : \"Okay, let's start. As everyone knows, behind the school we have a wall that seniors often climb to skip class.\n      So I think we should probably use that road to enter the school.\"\n"
+    "Ton : \"Okay, let's start. As everyone knows, behind the school we have a wall that seniors often climb to skip class. So I think we should probably use that road to enter the school.\"\n"
     "Hon : \"And what time do we meet?\"\n"
     "Ton : \"How about 09:45 p.m.?\"\n"
     "Ball : \"That's good. Do you need to prepare anything?\"\n"
@@ -108,16 +108,19 @@ void Act_1(){
     "Poom : \"I told you just in case, if you can't enter that way, you can enter this way.\"\n"
     "Ton : \"Well, it's good to have many options. If so, it might be better to wear long pants.\"\n"
     "Ball : \"I definitely won't go that way.\"\n"
-    "Ton : \"Well, it's just a choice. I'll repeat it again. We meet behind the school at 9:45 p.m. Bring as little stuff as possible.\n      The important thing is not to forget your phone. And if it's better, wear long pants that allow you to run easily, OK.\"\n"
+    "Ton : \"Well, it's just a choice. I'll repeat it again. We meet behind the school at 9:45 p.m. Bring as little stuff as possible. The important thing is not to forget your phone. And if it's better, wear long pants that allow you to run easily, OK.\"\n"
     "Hon : \"OK, clear.\"\n"
     "Poom : \"Whoever misses the appointment, I hope the ghost will haunt him every night.\"\n"
     "Ball : \"Haha, I hope it's like that too. Because I definitely won't do that.\"\n"
     "Ton : \"Let's keep it real, haha.\"\n"
     "Poom : \"Let's go home. See you at the appointed time.\"\n"
     "Hon : \"See you soon.\"\n"
-    "After that, they went their separate ways and went home. Do their own activities while waiting for your appointment time.\n\n";
-    printf("\nAct 1 : Curiosity is the cause.\n\n");
-    printf(di_act1);
+    "After that, they went their separate ways and went home. Do their own activities while waiting for your appointment time.\t\t\t\n";
+    frameCreate();
+    inFramePrint("Act 1 : Curiosity is the cause.\n");
+    frameCreate();
+    inFramePrint(di_act1);
+    continue_story();
 }
 
 void act2_1_behindschool(){
@@ -154,12 +157,12 @@ void act2_1_behindschool(){
     "Ball : \"Of course. I already checked.\"\n"
     "Ton : \"Okay, Let's go\"\n"
     "The four of them climbed up the back wall of the school, one by one. Until all 4 people entered.\n"
-    "Ton : \"Now we are behind the school. We will go to that room on the 6th floor.\n      First you have to pass the teacher on duty building and walk up the stairs next to the governing room.\"\n"
+    "Ton : \"Now we are behind the school. We will go to that room on the 6th floor. First you have to pass the teacher on duty building and walk up the stairs next to the governing room.\"\n"
     "Hon : Why did we go to that side? We can go up to the side of Building 4.\"\n"
     "Poom : \"No, there are only two way to go up the building because they have closed all. The other way is that we have to take the elevator.\"\n"
     "Hon : \"Ah, it's hard. Because the teacher on duty and the guard should come and inspect that area often.\"\n"
     "Ball : \"But if we can go up, there won't be any difficulty. Be careful not to get caught.\"\n"
-    "Ton : \"True. So let's go.\"\n\n";
+    "Ton : \"True. So let's go.\"\n";
     
     char headtostairs[] = 
     "The guard passed by as if nothing had happened.\n"
@@ -172,7 +175,7 @@ void act2_1_behindschool(){
     "Ton : \"Well, from what I've heard, it's not the same room in every nights.\"\n"
     "Hon : \"Great. The damn event happened randomly room.\"\n"
     "Ton : \"You can say that. Therefore, we had to go up and look before we knew which room it was.\"\n"
-    "Ball : \"But don't you have any doubts? The building is not tall enough to reach the sky.\n       Myth room on the 6th floor, there is only one room. Why don't the teachers or the guards know?\"\n"
+    "Ball : \"But don't you have any doubts? The building is not tall enough to reach the sky.  Myth room on the 6th floor, there is only one room. Why don't the teachers or the guards know?\"\n"
     "Poom : \"There's a reason, but what if he knows but pretends not to know?\"\n"
     "Ball : \"You can think from that point. But it still makes me suspicious.\"\n"
     "Ton : \"You starting to wonder right now?\"\n"
@@ -207,16 +210,16 @@ void act2_1_behindschool(){
     "Hon : \"I'm about to pee. There's hardly any strength in the legs.\"\n"
     "Ball : \"What should we do next?, Ton. Or is this enough?\"\n"
     "Ton : \"I'm afraid too. But having come this far, let's continue.\"\n"
-    "They continued walking until they were almost in front of the duty teacher's building.\n They talked together and came up with a plan to get past the building.\n\n";
+    "They continued walking until they were almost in front of the duty teacher's building.\n They talked together and came up with a plan to get past the building.\n";
 
     char stairtosixth[] = 
     "And then they reached the stairs next to the governing room.\n"
     "Ton : \"We've arrived. Let's go up.\"\n"
     "After that, they walked up.\n"
     "Hon : \"It's the first time I've ever seen the inside of a school at night like this.\"\n"
-    "Ball : \"The governing room that we walked through was quiet and no one was there.\n       It's worth picking up a behavior sheet to actually increase your score.\"\n"
+    "Ball : \"The governing room that we walked through was quiet and no one was there.  It's worth picking up a behavior sheet to actually increase your score.\"\n"
     "Hon : \"Haha, you often break the rules, especially about being late.\"\n"
-    "Ball : \"What can I do? My house is far away and the traffic is stuck.\n       By the time the bus passes by my house, it's already late. Sometimes there would be a car accident and I wouldn't be able to go.\"\n"
+    "Ball : \"What can I do? My house is far away and the traffic is stuck.  By the time the bus passes by my house, it's already late. Sometimes there would be a car accident and I wouldn't be able to go.\"\n"
     "Hon : \"Haha, life is truly unlucky, but I understand that cause I'm late too.\"\n"
     "Ball : \"But your house is next to the school. Are you still late?\"\n"
     "Hon : \"The bed won't let me go. I couldn't get up so I continued to sleep.\"\n"
@@ -280,7 +283,7 @@ void act2_1_behindschool(){
     "Ton : \"Settle conscious. Then come face to face with it.\"\n"
     "Hon : \"What are you going to do?\"\n"
     "Ton : \"If there was a ghost, it would only have one pair of feet. But there are 3 of us, which means we have 3 pairs of feet.\"\n"
-    "Ball : \"That's true. Okay. Let's face it\"\n\n";
+    "Ball : \"That's true. Okay. Let's face it\"\n";
 
     char doorofquestion1 [] = 
     "Poom : \"Ouch!, what the hell are you guys doing?\"\n"
@@ -304,23 +307,23 @@ void act2_1_behindschool(){
     "Hon : \"But if we answer incorrectly, what will it do to us? Is it written anywhere or not?\"\n"
     "Ball : \"No, I can't find it at all.\"\n"
     "Ton : \"Well, let's play with it a little.\"\n"
-    "Then Ton knocked on the door 3 times. On the door was a board with a message written on it.\n\n";
+    "Then Ton knocked on the door 3 times. On the door was a board with a message written on it.\n";
 
     char doorofquestion2 [] =
-    "Hon : \"I have 16 feet of fabric, cut 2 feet per day, 8 divided by 2, 8 days for sure,\n      so can I answer it?\"\n"
+    "Hon : \"I have 16 feet of fabric, cut 2 feet per day, 8 divided by 2, 8 days for sure, so can I answer it?\"\n"
     "Ton : \"Wait, I don't think so.\"\n"
     "Hon : \"Why is 16 divided by 2 equal to 8, right?\"\n"
     "Ton : \"Yes, but they said how many days it takes to cut the final piece of fabric, right? That's like it takes 7 days.\"\n"
     "Hon : \"Why 7?\"\n"
     "Ton : \"On the 7th day, you cut 14 feet, which means there are 2 feet of fabric left. It doesn't have to be cut, right?\"\n"
     "Poom : \"Oh, right. Answer it now.\"\n"
-    "When Ton answered 7, the door was silent for a moment. After that, the door opened with a new question.\n\n";
+    "When Ton answered 7, the door was silent for a moment. After that, the door opened with a new question.\n";
 
     char doorofquestion3 [] =
     "Ball : \"What's the question? I have a headache.\"\n"
     "Poom : \"Are you okay? You can sit and rest first.\"\n"
     "Ball : \"So I take a break for a bit.\"\n"
-    "Ton : \"It's 100 years old but it's only been held 25 times.\n      Is that possible? And arrange it every time and never miss it.\"\n"
+    "Ton : \"It's 100 years old but it's only been held 25 times. Is that possible? And arrange it every time and never miss it.\"\n"
     "Poom : \"I feel strange, like I've encountered this kind of problem before.\"\n"
     "Ton : \"Really? What is the answer?\"\n"
     "Poom : \"I'm trying, but it's stuck at the end.\"\n"
@@ -329,7 +332,7 @@ void act2_1_behindschool(){
     "Hon : \"Every 4 years there is 1 extra day, making the year 366 days. That was February 29th, correct or not?\"\n"
     "Poom : \"Every 4 years... Oh, yes, like you said.\"\n"
     "Ton : \"OK, I'm answer now.\"\n"
-    "After answering the door was still as before. and come up with new problems.\n\n";
+    "After answering the door was still as before. and come up with new problems.\n";
 
     char doorofquestion4[] = 
     "Ton : \"This time it's in English. I don't even know much about it.\"\n"
@@ -381,7 +384,7 @@ void act2_1_behindschool(){
     "Way 5 : There are incense sticks and candles all over the place.\n"
     "Ton : \"Let's take a look at each route and see which way to go. Does anyone have any ideas?\"\n"
     "Ball : \"The road with only ants and insects is not worth going. It's disgusting.\"\n"
-    "Poom : \"As for me, I think we should go in the direction where there are incense sticks and candles.\n       I think it looks like something religious.\"\n"
+    "Poom : \"As for me, I think we should go in the direction where there are incense sticks and candles.  I think it looks like something religious.\"\n"
     "Hon : \"But what if it happened the opposite result? Actually, it's the path of ghosts.\"\n"
     "Poom : \"It really thought about it that way. But it was my feeling at first glance.\"\n"
     "Ton : \"The next way is the way with paper. What kind of paper is it?\"\n"
@@ -395,81 +398,84 @@ void act2_1_behindschool(){
     "Hon : \"There probably isn't anything. Just a piece of ordinary wood.\"\n"
     "Poom : \"Probably so, because what we see now may just be an illusion.\"\n"
     "Ball : \"Another way is the one with coins. Look, it's just an ordinary baht coin.\"\n"
-    "Ton : \"But it can be interpreted as money from a ghost's mouth.\n      Relatives will put it in the dead person's mouth before putting the body in the coffin.\"\n"
+    "Ton : \"But it can be interpreted as money from a ghost's mouth. Relatives will put it in the dead person's mouth before putting the body in the coffin.\"\n"
     "Ball : \"Why did he put it in? I don't understand.\"\n"
     "Ton : \"It is believed that the deceased will have money with them to use in the afterlife.\"\n"
     "Ball : \"If that's the case, it's disgusting. I don't know what the damn coin has been through.\"\n"
-    "Ton : \"That's why we have to decide on the right path.\n      Well, have you all decided yet? Let's choose our next path.\"\n"
-    "When the time to choose comes, what will their path be next? You have to choose it for them.\n\n";
+    "Ton : \"That's why we have to decide on the right path. Well, have you all decided yet? Let's choose our next path.\"\n"
+    "When the time to choose comes, what will their path be next? You have to choose it for them.\n";
 
-    printf("\nAct 2.1 : Open your eyes.\n\n");
-    printf(sneakin);
+    frameCreate();
+    inFramePrint("Act 2.1 : Open your eyes.\n");
+    frameCreate();
+    inFramePrint(sneakin);
+
     while(process == 0){
-        printf("The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\nWhat should they do?\n");
-        printf("1 : Hide behind pile of broken chairs\n2 : Make noises meow like cat.\n3 : Throw rocks to distract.\n");
-        scanf("%d", &check);
+        check = decisionPrint("The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\nWhat should they do?\n1 : Hide behind pile of broken chairs\n2 : Make noises meow like cat.\n3 : Throw rocks to distract.\n");
         event_1_flashlight(check);
         is_over();
     }
     if(over_yet==1){
         process = 0;
-        printf(headtostairs);
+        frameCreate();
+        inFramePrint(headtostairs);
+        char des1 [] = "Ton : \"Okay, now we're in front of the teacher on duty building.\n What should we do?\"\n1 : Send someone to see if anyone is in the room.\n2 : Wait until someone walks out.\n3 : Just walk past, don't pay any attention.\n";
         while(process == 0){
-            printf("Ton : \"Okay, now we're in front of the teacher on duty building.\n What should we do?\"\n");
-            printf("1 : Send someone to see if anyone is in the room.\n2 : Wait until someone walks out.\n3 : Just walk past, don't pay any attention.\n");
-            scanf("%d", &check);
+            check = decisionPrint(des1);
             event_2_teacher_on_duty_building(check);
             is_over();
         }
     }
     if(over_yet==1){
         process = 0;
-        printf(stairtosixth);
+        frameCreate();
+        inFramePrint(stairtosixth);
+        char des2 [] = "The three of them stood in line in front of the board, preparing to deal with the unknown.\nAnd that mysterious voice was getting closer and closer to them.\nWhat should they do?\n1 : Charge!!!. \n2 : Throwing shoes. \n";
         while(process == 0){
-            printf("The three of them stood in line in front of the board, preparing to deal with the unknown.\nAnd that mysterious voice was getting closer and closer to them.\nWhat should they do?\n");
-            printf("1 : Charge!!!.\n2 : Throwing shoes.\n");
-            scanf("%d", &check);
+            check = decisionPrint(des2);
             event_3_unknown_in_the_dark(check);
             is_over();
         }
     }
     if(over_yet==1){
         process = 0;
-        printf(doorofquestion1);
+        frameCreate();
+        inFramePrint(doorofquestion1);
+        char des3 [] = "A tailor has a piece of cloth that is 16 feet long, and he cuts 2 feet of cloth every day.\nHow many days does it take him to cut the last piece of cloth? What is answer.\n1 : seven days. \n2 : eight days. \n3 : nine days. \n4 : zero day. \n";
         while(process == 0){
-            printf("A tailor has a piece of cloth that is 16 feet long, and he cuts 2 feet of cloth every day.\nHow many days does it take him to cut the last piece of cloth?\nWhat is answer.\n");
-            printf("1 : 7.\n2 : 8.\n3 : 9.\n4 : 0.\n");
-            scanf("%d", &check);
+            check = decisionPrint(des3);
             event_4_question1(check);
             is_over();
         }
     }
-    if(over_yet==1){
+    if(over_yet == 1){
         process = 0;
-        printf(doorofquestion2);
+        frameCreate();
+        inFramePrint(doorofquestion2);
+        char des4 [] = "An old man aged 100 years and a few months. But he's only had 25 birthday parties, even though he's had them since he was born.\nNever missed a single time. Why is that?\nWhat is answer.\t\t\t\n1 : He forgot to count for 75 years.\t\t\t\n2 : He forgot his age.\t\t\t\n3 : He remembered his birthday incorrectly. So it was counted incorrectly.\t\t\t\n4 : He was born on February 29th.\n";
         while(process == 0){
-            printf("An old man aged 100 years and a few months. But he's only had 25 birthday parties, even though he's had them since he was born.\nNever missed a single time. Why is that?\nWhat is answer.\n");
-            printf("1 : He forgot to count for 75 years.\n2 : He forgot his age.\n3 : He remembered his birthday incorrectly. So it was counted incorrectly.\n4 : He was born on February 29th.\n");
-            scanf("%d", &check);
+            check = decisionPrint(des4);
             event_4_question2(check);
             is_over();
         }
     }
     if(over_yet==1){
         process = 0;
-        printf(doorofquestion3);
+        frameCreate();
+        inFramePrint(doorofquestion3);
+        char des5[] = "I'm is a 6 letter english word. Subtract one letter and I'm left with 12. What is my word?\nWhat is answer.\n1 : Twelve.\n2 : Dozens.\n3 : Sibsong.\n4 : Ohf..k.\n\t\t\t\n";
         while(process == 0){
-            printf("I'm is a 6 letter english word. Subtract one letter and I'm left with 12. What is my word?\nWhat is answer.\n");
-            printf("1 : Twelve.\n2 : Dozens.\n3 : Sibsong.\n4 : Ohf..k.\n");
-            scanf("%d", &check);
+            check = decisionPrint(des5);
             event_4_question3(check);
             is_over();
         }
     }
     if(over_yet == 1){
         process = 0;
-        printf(onewaytogo);
+        frameCreate();
+        inFramePrint(onewaytogo);
     }
+    continue_story();
 }
 
 void act2_2_roadtothatroom(){
@@ -479,21 +485,22 @@ void act2_2_roadtothatroom(){
     "Ball : \"What's wrong with you all of a sudden? What are you going to say?\"\n"
     "Ton : \"I want to say it right now. I want to thank you all for walking along this journey with me until now.\"\n"
     "Poom : \"Oh, drama.\"\n"
-    "Ton : \"It was my curiosity and selfishness that brought you here.\n      The reason I was able to arrive was because you guys were waiting with me.\n      There are currently 5 paths that will determine the outcome of our decisions.\n      No matter what happens, we will get through it together.\"\n"
+    "Ton : \"It was my curiosity and selfishness that brought you here. The reason I was able to arrive was because you guys were waiting with me. There are currently 5 paths that will determine the outcome of our decisions. No matter what happens, we will get through it together.\"\n"
     "Hon : \"Haha, what are you talking about now? I came with you because we are curious too.\"\n"
     "Ball : \"Even though there were many events that happened, it was fun.\"\n"
     "Poom : \"Don't think too much. We're friends, aren't we?\"\n"
     "When Ton heard the three of them say that, he couldn't hold back his tears.\n"
     "Ball : \"You're crying. Haha.\"\n"
-    "Ton wipes away the tears that flow.\n"
-    "Ton : \"Nothing, let's make a choice.\"\n\n"
-    "Ton : \"Our next path is ....\"\n"
-    "Way 1 : There are pieces of rotted wood all over the floor.\nWay 2 : There have coins all over the floor.\nWay 3 : There are mysterious pieces of paper all over the floor.\nWay 4 : There have only ants and various insects running around.\nWay 5 : There are incense sticks and candles all over the place.\n";
-
-    printf("\nAct 2.2 : Truth of Ways.\n\n");
-    printf(truthofway);
-    scanf("%d", &check);
+    "Ton wipes away the tears that flow.\n";
+    
+    frameCreate();
+    inFramePrint("\nAct 2.2 : Truth of Ways.\n");
+    frameCreate();
+    inFramePrint(truthofway);
+    char way[] = "Ton : \"Nothing, let's make a choice. Our next path is ....\"\n1st Way : There are pieces of rotted wood all over the floor.\n2nd Way : There have coins all over the floor.\n3rd Way : There are mysterious pieces of paper all over the floor.\n4th Way : There have only ants and various insects running around.\n5th Way : There are incense sticks and candles all over the place.\n";
+    check = decisionPrint(way);
     event_choose_your_way(check);
+    continue_story();
 }
 
 void act3_endingofstory(){
@@ -517,7 +524,7 @@ void act3_endingofstory(){
     "T.Jom : \"Is it a haunted room that turns on its own lights at night?\"\n"
     "Ton : \"Yes.\"\n"
     "Teacher Jom sighed and began to tell the story.\n"
-    "T.Jom : \"There were only 4 people who came, right? No one besides these came.\n        Then the teacher will briefly tell you the history of our school.\"\n"
+    "T.Jom : \"There were only 4 people who came, right? No one besides these came.   Then the teacher will briefly tell you the history of our school.\"\n"
     "\"Going back to 26 years ago when the teacher was still a trainee teacher.\nA teacher came to train at this school, and one day he noticed something strange.\"\n"
     "\"For example, seeing a person whose body was engulfed in flames walking in front of the room.\nSome people have conditions that are not like people walking in school.\"\n"
     "\"When I saw this, I was shocked and searched for information and history of the school\nand found that this area of land was used to build the school.\"\n"
@@ -527,12 +534,12 @@ void act3_endingofstory(){
     "Ball : \"Does Uncle Chai know about this too?\"\n"
     "U.Chai : \"Of course, I was here before Teacher Jom.\"\n"
     "After Teacher Chom finished telling the story Ton raised his hand and asked.\n"
-    "Ton : \"Teacher, what does it have to do with this room?\n      What I heard is that this room is a haunted room.\"\n"
+    "Ton : \"Teacher, what does it have to do with this room? What I heard is that this room is a haunted room.\"\n"
     "T.Jom : \"There are no ghosts in this student room and it is the only room that does not.\"\n"
     "Hon : \"Why, what does this room have?\"\n"
     "T.Jom : \"It's nothing at all. And now what are you going to do?\"\n"
     "Ton : \"I don't know. After knowing the truth, I don't know what to do next.\"\n"
-    "T.Jom : \"Now you have a choice between waiting here in this room or going home.\n        You guys can talk first and then tell me.\"\n"
+    "T.Jom : \"Now you have a choice between waiting here in this room or going home.   You guys can talk first and then tell me.\"\n"
     "They turned to face each other and discussed what to do next.\n"
     "Ton : \"We'll wait here until morning or we'll go home.\"\n"
     "Poom : \"It's almost midnight now. If you wait, it's only another 6 hours.\"\n"
@@ -540,12 +547,12 @@ void act3_endingofstory(){
     "Ton : \"So let's vote on what we'll choose, okay?\"\n"
     "When they voted, they came to the conclusion that.\n"
     "Ton : \"Teacher Jom, we will be waiting here.\"\n"
-    "T.Jom : \"If you choose to stay here, that's fine.\n        But Uncle Chai and I had to go out and inspect other places as part of our duty. So you can live by yourself, right?\"\n"
+    "T.Jom : \"If you choose to stay here, that's fine.   But Uncle Chai and I had to go out and inspect other places as part of our duty. So you can live by yourself, right?\"\n"
     "Ton : \"Yes, no problem.\"\n"
     "Before Teacher Jom walks out He said in the end that\n"
-    "T.Jom : \"I forgot to tell you. The door will be closed and no matter what happens,\n        don't open it until morning. Do you understand?\"\n"
+    "T.Jom : \"I forgot to tell you. The door will be closed and no matter what happens,   don't open it until morning. Do you understand?\"\n"
     "Ton : \"Yes, but won't you come back here?\"\n"
-    "T.Jom : \"No, Uncle Chai and I will go to the teacher's building.\n        So do as I tell you strictly and except there is a necessary reason.\"\n"
+    "T.Jom : \"No, Uncle Chai and I will go to the teacher's building.   So do as I tell you strictly and except there is a necessary reason.\"\n"
     "The four of them just nodded and looked at the door that slowly closed.\n"
     "Poom : \"Have to wait another 6 hours. What should we do?\"\n"
     "Hon : \"Do you play games? Everyone has a mobile phone.\"\n"
@@ -562,7 +569,7 @@ void act3_endingofstory(){
     "? : This is Teacher Jom. Please open it. I really forgot something.\"\n"
     "Hon : \"I'm starting to think he's the real teacher.\"\n"
     "Ton : \"Please don't, or we'll all die.\"\n"
-    "Ball : \"Hon, don't listen. Come back, friends.\"\n\n";
+    "Ball : \"Hon, don't listen. Come back, friends.\"\n";
 
     char untilmorning[] =
     "Ball : \"Come back here quickly, friend.\"\n"
@@ -616,7 +623,7 @@ void act3_endingofstory(){
     "Poom : \"Shit, you're probably dead. Okay, what should I do?\"\n"
     "The knocking had begun again, but it was loud and rapid.\n"
     "? : \"Poom, is there somethings outside. Hurry and open it for me. Quickly!!\"\n"
-    "Poom : (The teacher told me not to open it, but those two weren't here either.\n       What should I do? Let's take a chance and see.)\n\n";
+    "Poom : (The teacher told me not to open it, but those two weren't here either.  What should I do? Let's take a chance and see.)\n";
 
     char endofstory[] =
     "The noise at the door had quietened and there was no sound at all. Makes Poom sigh after going through the events.\n But suddenly there was a sound as the door at the back of the room opened.\n"
@@ -649,61 +656,58 @@ void act3_endingofstory(){
     "? : \"The four of them paid their respects again and walked away.\"\n"
     "Completely End.\n";
 
-    printf("\nAct 3 : Wait Or Exit.\n\n");
-    printf(truthofroom);
+    frameCreate();
+    inFramePrint("\nAct 3 : Wait Or Exit.\n");
+    frameCreate();
+    inFramePrint(truthofroom);
     while (process == 0){
-        printf("Hon : \"What should I do? Open or not open?\"\n1 : Open the door.\n2 : Do not open the door.\n");
-        scanf("%d", &check);
+        check = decisionPrint("Hon : \"What should I do? Open or not open?\"\n1 : Open the door.\n2 : Do not open the door.\n");
         event_5_first_attempt(check);
         is_over();
     }
     if(over_yet==1){
         process = 0;
-        printf(untilmorning);
+        frameCreate();
+        inFramePrint(untilmorning);
         while(process == 0){
-            printf("Poom : I choose to...\n");
-            printf("1 : Open the door.\n2 : Do not open.\n");
-            scanf("%d", &check);
+            check = decisionPrint("Poom : I choose to...\n1 : Open the door.\n2 : Do not open.\n");
             event_6_confused(check);
             is_over();
         }
     }
     if(over_yet == 1){
-        printf(endofstory);
+        frameCreate();
+        inFramePrint(endofstory);
     }
 }
 
 void Loading(){
-    printf("\n\n");
+    printf("\n");
     char load[] = "Loading....";
-    slowPrint(load);
-    printf("\n\n");
-}
-
-int continue_story(int num){
-    printf("Continue....?\n1 : Yes.\n0 : No.\n");
-    scanf("%d", &check);
-    if(check == 1){
-        act++;
-        return num = 1;
-    } else {
-        return num = 0;
-    }
+    inFramePrint(load);
+    printf("\n");
 }
 
 void is_over(){
     if(over_yet == 0){
-        printf("Game Over\nDo you want to retry?\n1 : Retry.\n0 : Give up.\n");
-        scanf("%d", &check);
+        check = decisionPrint("Game Over\nDo you want to retry?\n1 : Retry.\t\n2 : Give up.\t\n");
         if(check == 1){
             process = 0;
-            printf("\n");
         } else {
             process = 1;
-            printf("\n");
         }
     } else {
         process = 1;
-        printf("\n");
     }
 }
+
+void continue_story(){
+    char continues [] = "Continue....?  \n1 : Yes.  \n2 : No.  \n";
+    check = decisionPrint(continues);
+    if (check == 1){
+        act++;
+    }else{
+        check = 0;
+    }
+}
+
