@@ -286,7 +286,34 @@ void event_choose_your_way(int num){
         "Ton : \"No one understands. The story was cut like this. I don't know where it came from...\"\n";
     }
     else if(num == 3){
-
+        "Ton : \"Guess we need to go this way. Is everyone okay.\"\n"
+        "Poom : \"Yeah we're good.\"\n"
+        "Ball : \"This place is sucks as hell all of there are only fallen building.\"\n"
+        "Hon : \"Can you just shut up! We need to get out of here.\"\n"
+        "Poom : Hon's right. We need to get out of here immediately. I have a bad feeling about this.\"\n"
+        "Ton : The question is how we get outta here. This place is messy.\"\n"
+        "Bam! Bam! Bam!\n"
+        "Ball : \"Is that a gun!? arghh!!\"\n"
+        "Ton : \"Ball calm down! Ugh Let's follow him.\"\n"
+        "Ball got scare of that Bam noise and runaway out of nowwhere and the group are now chasing him to regroup"
+        "Hon : \"Damn you Ball! You need to calm down man. Now we lost.\"\n"
+        "Ball : \"I'm sorry. I'm just scare that sound like a gun.\"\n"
+        "Poom : \"If that really sound of a gun. We need to get outta here hurry.\"\n"
+        "Ton : \"Guys there some paper here.\"\n"
+        "There are 2 piece of paper. The paper is land title deed\n"
+        "Hon :\"Guys. There's something more.\"\n"
+        "When they look where pointing they found many paper on floor and all of them are death certificate. Among that there are newspaper.\n"
+        "The Group read the newspaper.\n"
+        "The newspaper says there are 2 missing hiker found in corpse and 24 death certificates also the fake land title deed. After investigating 2 hiker death cause  by ...\n"
+        "Shot !! by a gun and the killer are still missing.\n"
+        "Ball : \"This is bad this is bad. We all gonna die. Nooo! I don't wanna die here\"\n"
+        "Hon : \"For god sake!! Can you just shut up. If your cry out lound that why we gonna die. Don't you remember the killer might still around.\"\n"
+        "Ton : \"Hon was right. We need to be quiet and call the police now. Poom.\"\n"
+        "Poom : \"Sure thing. Damn There is signal around here. I think we need to find way out ourselves.\"\n"
+        "Ball : \"If that so I think we need to think in the case we need to fight just grab something to be your weapon.\"\n"
+        "The group grabs thing around there to be there weapon.\n"
+        "Ton grabs big stone that easy to take and easy to use. If a person was hit by this stone with brute force there would be very injure.\n"
+        "Poom grab handy stick. They just handy so it's easy to use.\n";
     }
     else if(num == 4){
 
