@@ -4,13 +4,8 @@
 #include <termios.h>
 #include <ctype.h>
 #include <string.h>
+#include "image.c"
 
-void clearInputBuffer() {
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF) {
-        // Read characters until a newline or end of file is encountered
-    }
-}
 int terminalRes(){
     int rows, cols;
     FILE *pipe = popen("tput lines", "r");
@@ -39,6 +34,37 @@ int terminalRes(){
         }
     }
     return rows;
+}
+
+int character_image(const char *text){
+    int rows = terminalRes();
+    int line = 0;
+    printf("\033[%d;2H", rows-8);
+    for (int i = 0; text[i] != '\0'; i++) {
+        if (text[i] == '\n') {
+            line++;
+            printf("\033[%d;3H", rows-8+line);
+            i++;
+        }
+        printf("%c", text[i]);
+        fflush(stdout);
+    }
+}
+
+int main_image(const char *text){
+    int rows = terminalRes();
+    int line = 0;
+    printf("\033[%d;2H", rows-28);
+    for (int i = 0; text[i] != '\0'; i++) {
+        if (text[i] == '\n') {
+            line++;
+            printf("\033[%d;3H", rows-28+line);
+            i++;
+        }
+        printf("%c", text[i]);
+        fflush(stdout);
+    }
+    printf("\033[0;3H");
 }
 
 int frameCreate(){
@@ -90,35 +116,62 @@ int frameCreate(){
                 printf(" ");
             }
         }
-        
         printf("\033[%d;0H", rows-28+i);
     }
+    printf("\033[%d;18H", rows-8);
     return 0;
 }
 
-void inFramePrint(const char *text) {
+
+void inFramePrint(const char *text, const char *img) {
     int rows = terminalRes();
     int delaychar = 50000;
     int delaydialog = 2500000;
+    int checkimg = 0;
     frameCreate();
+    main_image(img);
     printf("\033[%d;5H", rows-1);
     printf("Narrator");
 
     //first print condition
     //printname
     int firstslice = 0;
+    char name[10] = "";
+    int name_lenth = 0;
     for (int m = 0; m < 10; m++){
         if(text[m] == ':' && text[m+1] == ' '){
             printf("\033[%d;2H", rows-1);
             printf("               ");
             printf("\033[%d;8H", rows-1);
-                for (int j = m; j > 1; j--){
-                    printf("%c",text[(m-j)]);
+            for (int j = m; j > 1; j--){
+                printf("%c",text[(m-j)]);
+                name[name_lenth] = text[m-j];
+                name_lenth++;
+            }
+            if (name[0] == 'T' && name_lenth >= 3){
+                    character_image(ton_img);
+                    checkimg = 1;
+                }
+                else if (name[0] == 'B' && name_lenth >= 3){
+                    character_image(ball_img);
+                    checkimg = 1;
+                }
+                else if (name[0] == 'P' && name_lenth >= 4){
+                    character_image(poom_img);
+                    checkimg = 1;
+                }
+                else if (name[0] == 'H' && name_lenth >= 3){
+                    character_image(hon_img);
+                    checkimg = 1;
                 }
                 firstslice = m+2;
                 break;
-            }
         }
+    }
+    if (checkimg == 0){
+        character_image(narrator_img);
+    }
+
     //check line overflow
     int new_line = 0;
     printf("\033[%d;18H", rows-8+new_line);
@@ -141,11 +194,12 @@ void inFramePrint(const char *text) {
     //main print
     for (int i = 0+firstslice; text[i] != '\0'; i++) {
         if (text[i] == '\n') { //nextdialog
+            checkimg = 0;
             rows = terminalRes();
-            frameCreate();
             new_line = 0;
             count = 0;
             usleep(delaydialog);
+            main_image(img);
             printf("\033[%d;18H", rows-8);
             i++;
             for (int l = 0; l < 8; l++){
@@ -156,6 +210,7 @@ void inFramePrint(const char *text) {
             }
             printf("\033[%d;5H", rows-1);
             printf("Narrator");
+            char name [10] = "";
             int name_lenth = 0;
             for (int m = i; m-i < 10; m++){
                 if(text[m] == ':' && text[m-1] == ' '){
@@ -164,11 +219,31 @@ void inFramePrint(const char *text) {
                     printf("\033[%d;8H", rows-1);
                     for (i; i < m; i++){
                         printf("%c",text[i]);
+                        name[name_lenth] = text[i];
                         name_lenth++;
+                    }
+                    if (name[0] == 'T' && name_lenth >= 3){
+                        character_image(ton_img);
+                        checkimg = 1;
+                    }
+                    else if (name[0] == 'B' && name_lenth >= 3){
+                        character_image(ball_img);
+                        checkimg = 1;
+                    }
+                    else if (name[0] == 'P' && name_lenth >= 4){
+                        character_image(poom_img);
+                        checkimg = 1;
+                    }
+                    else if (name[0] == 'H' && name_lenth >= 3){
+                        character_image(hon_img);
+                        checkimg = 1;
                     }
                     i+=2;
                     break;
                 }
+            }
+            if (checkimg == 0){
+                character_image(narrator_img);
             }
             while (text[i+count] != '\n'){
                 count++;
@@ -224,12 +299,17 @@ void inFramePrint(const char *text) {
                 delaychar = 0;
                 delaydialog = 0;
             }
+            else if (ch == 'r'){
+                delaychar = 0;
+                delaydialog = 0;
+                frameCreate();
+            }
         }
         usleep(delaychar);
     }
 }
 
-int decisionPrint(const char *text){
+int decisionPrint(const char *text, const char *img){
     int rows = terminalRes();
     char choice[10][85];
     int numchoice = 1;
@@ -238,6 +318,8 @@ int decisionPrint(const char *text){
     int max_text_width = 82;
     int new_line = 0;
     frameCreate();
+    main_image(img);
+    character_image(question);
     printf("\033[%d;5H", rows-1);
     printf("Decission");
     printf("\033[%d;18H", rows-8);

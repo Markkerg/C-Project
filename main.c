@@ -13,10 +13,10 @@ int main(){
     newt.c_lflag &= ~(ICANON | ECHO);
     tcsetattr(STDIN_FILENO, TCSANOW, &newt);
     char welcom [] = "Welcome to the game \"Ghost Room\"\n1 : Start game. \n2 : Exit. \n";
-    int check = decisionPrint(welcom);
+    int check = decisionPrint(welcom,title_img);
     if(check == 2){
         char thank [] = "Thank you for playing";
-        inFramePrint(thank);
+        inFramePrint(thank,act1_img);
         tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
         return 0;
     }
@@ -38,7 +38,7 @@ int main(){
             }
         }else{
             char thank [] = "Thank you for playing";
-            inFramePrint(thank);
+            inFramePrint(thank,act1_img);
             tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
             return 0;
         }

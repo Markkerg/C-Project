@@ -2,7 +2,6 @@
 #include<unistd.h>
 #include"decision.c"
 
-void inFramePrint(const char *text);
 void is_over();
 void continue_story();
 int check,act=1,process=0;
@@ -117,9 +116,9 @@ void Act_1(){
     "Hon : \"See you soon.\"\n"
     "After that, they went their separate ways and went home. Do their own activities while waiting for your appointment time.\t\t\t\n";
     frameCreate();
-    inFramePrint("Act 1 : Curiosity is the cause.\n");
+    inFramePrint("Act 1 : Curiosity is the cause.\n",act1_img);
     frameCreate();
-    inFramePrint(di_act1);
+    inFramePrint(di_act1,school_img);
     continue_story();
 }
 
@@ -406,22 +405,22 @@ void act2_1_behindschool(){
     "When the time to choose comes, what will their path be next? You have to choose it for them.\n";
 
     frameCreate();
-    inFramePrint("Act 2.1 : Open your eyes.\n");
+    inFramePrint("Act 2.1 : Open your eyes.\n",act1_img);
     frameCreate();
-    inFramePrint(sneakin);
+    inFramePrint(sneakin,act1_img);
 
     while(process == 0){
-        check = decisionPrint("The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\nWhat should they do?\n1 : Hide behind pile of broken chairs\n2 : Make noises meow like cat.\n3 : Throw rocks to distract.\n");
+        check = decisionPrint("The three of them nodded in agreement together and is about to walk to the destination But suddenly, a flashlight was shining on them.\nWhat should they do?\n1 : Hide behind pile of broken chairs\n2 : Make noises meow like cat.\n3 : Throw rocks to distract.\n",title_img);
         event_1_flashlight(check);
         is_over();
     }
     if(over_yet==1){
         process = 0;
         frameCreate();
-        inFramePrint(headtostairs);
+        inFramePrint(headtostairs,act1_img);
         char des1 [] = "Ton : \"Okay, now we're in front of the teacher on duty building.\n What should we do?\"\n1 : Send someone to see if anyone is in the room.\n2 : Wait until someone walks out.\n3 : Just walk past, don't pay any attention.\n";
         while(process == 0){
-            check = decisionPrint(des1);
+            check = decisionPrint(des1,title_img);
             event_2_teacher_on_duty_building(check);
             is_over();
         }
@@ -429,10 +428,10 @@ void act2_1_behindschool(){
     if(over_yet==1){
         process = 0;
         frameCreate();
-        inFramePrint(stairtosixth);
+        inFramePrint(stairtosixth,act1_img);
         char des2 [] = "The three of them stood in line in front of the board, preparing to deal with the unknown.\nAnd that mysterious voice was getting closer and closer to them.\nWhat should they do?\n1 : Charge!!!. \n2 : Throwing shoes. \n";
         while(process == 0){
-            check = decisionPrint(des2);
+            check = decisionPrint(des2,title_img);
             event_3_unknown_in_the_dark(check);
             is_over();
         }
@@ -440,10 +439,10 @@ void act2_1_behindschool(){
     if(over_yet==1){
         process = 0;
         frameCreate();
-        inFramePrint(doorofquestion1);
+        inFramePrint(doorofquestion1,act1_img);
         char des3 [] = "A tailor has a piece of cloth that is 16 feet long, and he cuts 2 feet of cloth every day.\nHow many days does it take him to cut the last piece of cloth? What is answer.\n1 : seven days. \n2 : eight days. \n3 : nine days. \n4 : zero day. \n";
         while(process == 0){
-            check = decisionPrint(des3);
+            check = decisionPrint(des3,title_img);
             event_4_question1(check);
             is_over();
         }
@@ -451,10 +450,10 @@ void act2_1_behindschool(){
     if(over_yet == 1){
         process = 0;
         frameCreate();
-        inFramePrint(doorofquestion2);
+        inFramePrint(doorofquestion2,act1_img);
         char des4 [] = "An old man aged 100 years and a few months. But he's only had 25 birthday parties, even though he's had them since he was born.\nNever missed a single time. Why is that?\nWhat is answer.\t\t\t\n1 : He forgot to count for 75 years.\t\t\t\n2 : He forgot his age.\t\t\t\n3 : He remembered his birthday incorrectly. So it was counted incorrectly.\t\t\t\n4 : He was born on February 29th.\n";
         while(process == 0){
-            check = decisionPrint(des4);
+            check = decisionPrint(des4,title_img);
             event_4_question2(check);
             is_over();
         }
@@ -462,10 +461,10 @@ void act2_1_behindschool(){
     if(over_yet==1){
         process = 0;
         frameCreate();
-        inFramePrint(doorofquestion3);
+        inFramePrint(doorofquestion3,act1_img);
         char des5[] = "I'm is a 6 letter english word. Subtract one letter and I'm left with 12. What is my word?\nWhat is answer.\n1 : Twelve.\n2 : Dozens.\n3 : Sibsong.\n4 : Ohf..k.\n\t\t\t\n";
         while(process == 0){
-            check = decisionPrint(des5);
+            check = decisionPrint(des5,title_img);
             event_4_question3(check);
             is_over();
         }
@@ -473,7 +472,7 @@ void act2_1_behindschool(){
     if(over_yet == 1){
         process = 0;
         frameCreate();
-        inFramePrint(onewaytogo);
+        inFramePrint(onewaytogo,act1_img);
     }
     continue_story();
 }
@@ -494,11 +493,11 @@ void act2_2_roadtothatroom(){
     "Ton wipes away the tears that flow.\n";
     
     frameCreate();
-    inFramePrint("\nAct 2.2 : Truth of Ways.\n");
+    inFramePrint("\nAct 2.2 : Truth of Ways.\n",act1_img);
     frameCreate();
-    inFramePrint(truthofway);
+    inFramePrint(truthofway,act1_img);
     char way[] = "Ton : \"Nothing, let's make a choice. Our next path is ....\"\n1st Way : There are pieces of rotted wood all over the floor.\n2nd Way : There have coins all over the floor.\n3rd Way : There are mysterious pieces of paper all over the floor.\n4th Way : There have only ants and various insects running around.\n5th Way : There are incense sticks and candles all over the place.\n";
-    check = decisionPrint(way);
+    check = decisionPrint(way,title_img);
     event_choose_your_way(check);
     continue_story();
 }
@@ -657,40 +656,40 @@ void act3_endingofstory(){
     "Completely End.\n";
 
     frameCreate();
-    inFramePrint("\nAct 3 : Wait Or Exit.\n");
+    inFramePrint("\nAct 3 : Wait Or Exit.\n",act1_img);
     frameCreate();
-    inFramePrint(truthofroom);
+    inFramePrint(truthofroom,act1_img);
     while (process == 0){
-        check = decisionPrint("Hon : \"What should I do? Open or not open?\"\n1 : Open the door.\n2 : Do not open the door.\n");
+        check = decisionPrint("Hon : \"What should I do? Open or not open?\"\n1 : Open the door.\n2 : Do not open the door.\n",title_img);
         event_5_first_attempt(check);
         is_over();
     }
     if(over_yet==1){
         process = 0;
         frameCreate();
-        inFramePrint(untilmorning);
+        inFramePrint(untilmorning,act1_img);
         while(process == 0){
-            check = decisionPrint("Poom : I choose to...\n1 : Open the door.\n2 : Do not open.\n");
+            check = decisionPrint("Poom : I choose to...\n1 : Open the door.\n2 : Do not open.\n",title_img);
             event_6_confused(check);
             is_over();
         }
     }
     if(over_yet == 1){
         frameCreate();
-        inFramePrint(endofstory);
+        inFramePrint(endofstory,act1_img);
     }
 }
 
 void Loading(){
     printf("\n");
     char load[] = "Loading....";
-    inFramePrint(load);
+    inFramePrint(load,act1_img);
     printf("\n");
 }
 
 void is_over(){
     if(over_yet == 0){
-        check = decisionPrint("Game Over\nDo you want to retry?\n1 : Retry.\t\n2 : Give up.\t\n");
+        check = decisionPrint("Game Over\nDo you want to retry?\n1 : Retry.\t\n2 : Give up.\t\n",title_img);
         if(check == 1){
             process = 0;
         } else {
@@ -703,7 +702,7 @@ void is_over(){
 
 void continue_story(){
     char continues [] = "Continue....?  \n1 : Yes.  \n2 : No.  \n";
-    check = decisionPrint(continues);
+    check = decisionPrint(continues,title_img);
     if (check == 1){
         act++;
     }else{
