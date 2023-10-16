@@ -315,7 +315,33 @@ void event_choose_your_way(int num){
         "Ball : \"If that so I think we need to think in the case we need to fight just grab something to be your weapon.\"\n"
         "The group grabs thing around there to be there weapon.\n"
         "Ton grabs big stone that easy to take and easy to use. If a person was hit by this stone with brute force there would be very injure.\n"
-        "Poom grab handy stick. They just handy so it's easy to use.\n";
+        "Poom grabs handy stick. It's just handy so it's easy to use.\n"
+        "Hon grabs big stick. It's very big if that was hit sure it was heavy damage.\n"
+        "Ball grabs normal stick that his hand can hold.\n";
+        "The group walk a long till they see 2 people walking to their way\n"
+        "Poom : \"/Shhh. I heard something.\"\n"
+        "Hiker1 : \"Hey! What are you doing here kids?\"\n"
+        "Hon : \"Wait. They aren't shooter. Hi we just try to get out of here.\"\n"
+        "Ton : \"You never see shooter face. How are you so sure he's friendly.\"\n"
+        "Hiker2 : \"What shooter ? We just hiker here. We try to get out of here too but We found something weird about this place.\"\n"
+        "Ton : \"Don't you mean you find a land title deed and death certificate.\"\n"
+        "Hiker1 : \"Yeah. Wait How did you know what we found ?\"\n"
+        "Ton : \"We found it too.\"\n"
+        "Poom : \"Wait. These 2 hikers look familair.\"\n"
+        "Ball : \"Guys. I can contact police they said they will be here soon.\"\n"
+        "Hon : \"Finally I can get out of this place\"\n"
+        "Hiker1 : \"What are you guys tal--\"\n"
+        "Bang!!!\n"
+        "The Hiker1 was shot from behind. He was down in front of the group. The blood from Hiker1 shed on Hon face.\n"
+        "Hon \"Arggghh!!!\"\n"
+        "Hon screams in fear loundly\n"
+        "Hiker2: What ju---\"\n"
+        "Bang!!! another shot hits hiker2 and send him to death instanly before the group.\n"
+        "Ball : \"What the fuck just happen ?! urghh arrghhh\"\n"
+        "The group mind was destroy all of them can't hold their sanity anymore\n"
+        "Finall Poom think something round\n" 
+        "Poom : \"I get it 2 hikers are the same that in the news then we are in----\"\n"
+        "Bang! Bang! Bang! Bang!\n";
     }
     else if(num == 4){
 
