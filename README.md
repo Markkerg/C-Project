@@ -1,6 +1,6 @@
-หากเปิด .exe file ไม่ได้
-1.download cygwin(ถ้ายังไม่ได้โหลด)
-2.เพิ่ม environment path C:\cygwin64\bin (defult)
+หากเปิด .exe file ไม่ได้\n
+1.download cygwin(ถ้ายังไม่ได้โหลด)\n
+2.เพิ่ม environment path C:\cygwin64\bin (defult)\n
 
-hold (space) = skip
-prees r = refrese screen
+hold (space) = skip\n
+prees r = refrese screen\n
