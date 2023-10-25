@@ -1,11 +1,25 @@
 body {
     margin: 0;
-    background-image: url(halloween.jpg);
+    background-image: url(images/background.jpg);
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.ladkrabang{
+    width: 200px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .container {
     width: 100%;
     height: 90px;
+    background-image: url(images/backheader.jpg);
     background-color: rgb(253, 165, 0);
     box-sizing: border-box;
     display: flex;
@@ -19,33 +33,21 @@ body {
 }
 
 .titlename{
-    font-size: 36px;
+    font-size: 40px;
     display: inline-block;
     font-family: 'Kanit', sans-serif;
-}
-
-.nav-links ul{
-    padding-left: 15px;
-    padding-top: 5px;
-    display: flex;
-    justify-items: flex-start;
-    align-items: center;
-    list-style: none;
-}
-
-.nav-links ul li a{
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
 }
 
 .content {
     width: 80%;
     height: auto;
-    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
-    padding-top: 110px;
+    margin: 0 auto;
+    margin-top: 110px;
     background-color: black;
+    border: 1px solid rgb(253, 165, 0); /* เพิ่ม border รอบ content */
+    padding: 20px; /* ระยะขอบของ content */
+    border-radius: 10px; /* กำหนดมุมขอบ */
 }
 
 .headproject{
@@ -70,14 +72,27 @@ body {
 }
 
 .textcontent{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Kanit', sans-serif;
     padding-inline-start: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: rgb(253, 165, 0);
 }
 
 .boxcontent{
     padding-left: 25px;
 }
+
+.cilp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; /* ระยะที่เต็มหน้าจอ */
+  }
+  
+.clipdemo {
+    width: 70%; /* ความกว้างของวิดีโอ */
+    max-width: 800px; /* สูงสุดของความกว้าง */
+  }
+  
