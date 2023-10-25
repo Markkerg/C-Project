@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-image: url(halloween.jpg);
+}
+
+.container {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(253, 165, 0);
+    box-sizing: border-box;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+}
+
+.titlename{
+    font-size: 36px;
+    display: inline-block;
+    font-family: 'Kanit', sans-serif;
+}
+
+.nav-links ul{
+    padding-left: 15px;
+    padding-top: 5px;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links ul li a{
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.content {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    padding-top: 110px;
+    background-color: black;
+}
+
+.headproject{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headtext{
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    padding-bottom: 5px;
+    color: rgb(253, 165, 0);
+}
+
+.text {
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    padding-bottom: 5px;
+    color: rgb(253, 165, 0);
+}
+
+.textcontent{
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    padding-inline-start: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(253, 165, 0);
+}
+
+.boxcontent{
+    padding-left: 25px;
+}
