@@ -78,6 +78,13 @@ body {
     color: rgb(253, 165, 0);
 }
 
+.codeText{
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    padding-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
 .boxcontent{
     padding-left: 25px;
 }
@@ -95,4 +102,59 @@ body {
     width: 70%; /* ความกว้างของวิดีโอ */
     max-width: 800px; /* สูงสุดของความกว้าง */
   }
+
+.hiden{
+    max-width: 0px;
+    overflow: hidden;
+}
+
+.tab__label:not(.tab__content):hover{
+    background: rgb(192, 125, 2);
+}
+.tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    background-color: wheat;
+    color: black;
+}
+  .tab input:checked ~ .tab__content {
+    max-height: 30000px;
+}
+.tab__label{
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    color: rgb(0, 0, 0);
+    background: rgb(253, 165, 0);
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem;
+} 
+.tab__label:hover{
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    color: white;
+    background: rgb(0, 81, 255);
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem;
+} 
+.tab__label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+    transform: rotate(270deg);
+}
+.tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
   

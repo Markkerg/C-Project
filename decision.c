@@ -8,21 +8,21 @@ void event_1_flashlight(int num){
         char choose1[] = 
         "They chose to hide behind a pile of broken chairs.\nBut they didn't know that there were tiny holes through which they could be seen being caught.\n"
         "Guard : \"Yare yara(jojo ref). You little. You've already been caught.\"\n\n";
-        inFramePrint(choose1,act1_img);
+        inFramePrint(choose1,flashlight_choice1_img);
         over_yet = 0;
     }
     else if(num == 2){
         char choose2[] = 
         "What the hell were you thinking to do that?. But then, when they did that, the guard then...\n"
         "Guard : \"It's just the sound of a cat, let it be.\"\n";
-        inFramePrint(choose2,act1_img);
+        inFramePrint(choose2,flashlight_choice2_img);
         over_yet = 1;
     }
     else if (num == 3){
         char choose3[] = 
         "It worked. Guard walking to the place where the stone was thrown. And they all slowly walked away, but...\n"
         "Guard : \"Oh, you guys look down on my keen eyesight as a guard too much, little one.\"\n\n";
-        inFramePrint(choose3,act1_img);
+        inFramePrint(choose3,flashlight_choice1_img);
         over_yet = 0;
     }
 }
@@ -35,7 +35,7 @@ void event_2_teacher_on_duty_building(int num){
         "Poom : \"Why me? No, you go.\"\n"
         "Ton : \"I'm not going. You go.\"\n"
         "Afterwards, they quarreled until an outcry was heard throughout the area.\nThis made the guards and teachers aware of them and captured them.\n\n";
-        inFramePrint(choose1,act1_img);
+        inFramePrint(choose1,flashlight_choice1_img);
         over_yet = 0;
     }
     else if(num == 2){
@@ -43,7 +43,7 @@ void event_2_teacher_on_duty_building(int num){
         "They chose to wait for someone to come out of the room to Make sure it's easy to walk past.\nBut they waited and waited and no one came out until...\n"
         "Teacher on duty : \"What are you guys doing here so late at night?\"\n"
         "Poom : \"Oh no.\"\n\n";
-        inFramePrint(choose2,act1_img);
+        inFramePrint(choose2,flashlight_choice1_img);
         over_yet = 0;
     }
     else{
@@ -52,7 +52,7 @@ void event_2_teacher_on_duty_building(int num){
         "Hon : \"Seriously, what if there was one?\"\n"
         "Ton : \"Belive me, my bro\"\n"
         "After that, they walked past the duty teacher's building easily. Because there was no one there.\n";
-        inFramePrint(choose3,act1_img);
+        inFramePrint(choose3,event_2_teacher_on_duty_building_img);
         over_yet = 1;
     }
 }
@@ -64,7 +64,7 @@ void event_3_unknown_in_the_dark(int num){
         "Hon : \"I'm very ready.\"\n"
         "When that thing came out, the three of them ran over to swarm and stomp on that thing mercilessly.\nThen suddenly the previously dark path opened, resulting in enough light to reach that thing, which is Poom.\n"
         "Poom : \"Why are you guys stomping on me?\"\n";
-        inFramePrint(choose1,act1_img);
+        inFramePrint(choose1,event_3choice1_unknown_in_the_dark_img);
         over_yet = 0;
     }
     else{
@@ -73,7 +73,7 @@ void event_3_unknown_in_the_dark(int num){
         "Hon : \"What are you going to do?\"\n"
         "Ton : \"You wait and see.\"\n"
         "When that thing comes out Ton immediately threw that shoe at that thing.\n";
-        inFramePrint(choose2,act1_img);
+        inFramePrint(choose2,event_3choice2_unknown_in_the_dark_img);
         over_yet = 1;
     }
 }
@@ -87,7 +87,7 @@ void event_4_question1(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     }
     else if(num == 3){
@@ -95,7 +95,7 @@ void event_4_question1(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     }
     else{
@@ -103,7 +103,7 @@ void event_4_question1(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     }
 }
@@ -114,7 +114,7 @@ void event_4_question2(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     } 
     else if(num == 2){
@@ -122,7 +122,7 @@ void event_4_question2(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     }
     else if(num == 3){
@@ -130,7 +130,7 @@ void event_4_question2(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     }
     else{
@@ -144,7 +144,7 @@ void event_4_question3(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     } 
     else if(num == 2){
@@ -155,7 +155,7 @@ void event_4_question3(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     }
     else{
@@ -163,7 +163,7 @@ void event_4_question3(int num){
         "After answering the board on the door transformed into a large mouth with sharp teeth and said…\n"
         "Door : \"You gave the wrong answer, you fool.\"\n"
         "The door then absorb everyone's flesh in and then disappeared. Turning the four of them into lifeless skeletons.\n";
-        inFramePrint(wrong,act1_img);
+        inFramePrint(wrong,doorwrong_img);
         over_yet = 0;
     }
 }
@@ -224,6 +224,7 @@ void event_choose_your_way(int num){
         "The four of them could only stand and watch the scene in front of them without being able to do anything.\nThis made them unable to hold back their tears and feel great heartache.\n"
         "Hon : \"What is this crazy thing? Why did it let me see something like this?\"\n"
         "Ton : \"Damn, so sad. I wish that girl to be as happy in her next life.\"\n";
+        inFramePrint(way1,way1_img);
     }
     else if(num == 2){
         char way2[] =
@@ -285,6 +286,7 @@ void event_choose_your_way(int num){
         "Suddenly, that uncle fired a shot at his own head. and the body fell down and became lifeless.\n"
         "Poom : \"Again, this too much. What story is it trying to convey? I don't understand.\"\n"
         "Ton : \"No one understands. The story was cut like this. I don't know where it came from...\"\n";
+        inFramePrint(way2,school_img);
     }
     else if(num == 3){
         char way3[] =
@@ -342,8 +344,10 @@ void event_choose_your_way(int num){
         "Finall Poom think something round\n" 
         "Poom : \"I get it 2 hikers are the same that in the news then we are in----\"\n"
         "Bang! Bang! Bang! Bang!\n";
+        inFramePrint(way3,way3_img);
     }
     else if(num == 4){
+        char way4[] =
         "Ton : \"Everyone alright?\"\n"
         "Ball : \"Yeah. What is this place. Feel weird.\"\n"
         "Hon : \"Me too. Let's find way to get out of here\"\n"
@@ -382,8 +386,10 @@ void event_choose_your_way(int num){
         "After the pile down many venomous creature such as snake scorpion and many more come out like they don't want anythng to build on this area.\n"
         "Hon : \"We're doomed\"\n"
         "Poom : \"May be it's... it can't be ca---\"\n";
+        inFramePrint(way4,way4_img);
     }
     else{
+        char way5[] =
         "Ton : \"Everyone alright?\"\n"
         "Poom : \"Yeah. We're fine.\"\n"
         "Ball : \"Guys look at that.\"\n"
@@ -414,8 +420,9 @@ void event_choose_your_way(int num){
         "Sheriff : \"Guess we can build school now\"\n"
         "Poom : \"Why have to do such a things to build school here or maybe it----\"\n"
         "After The ritual school was built successfully.\n";
+        inFramePrint(way5,way5_img);
     }
-    inFramePrint("Then time sped up and took the four of them somewhere.\nPoom : \"Oh, what the fuck? Did we get warped again?\"\nTon : \"That's probably right. Where did we get teleported to?\"\nHon : \"Hey guys, this is our school.\"\nTon : \"Oh, that's true. And what part of the school are we in?\"\nBall : \"A balcony walkway like this. Hmm. You guys look at that room.\"\nEveryone turned to look at one of the classrooms that had light shining out of it.\nTon : \"We've arrived, right? On the 6th floor.\"\nPoom : \"I don't know, but please, I'm so tired.\"\nBall : \"There was something unknown in the shape of a person walking out of the room.\"\nTon : \"Everyone, stay sharp!!\"\nThe light in the room shone through something like a shadow of a person outside the room.\nAnd that thing was walking out until it appeared in front of them.\nTeacher : \"What are you all doing here so late at night?\"\n\n",act1_img);
+    inFramePrint("Then time sped up and took the four of them somewhere.\nPoom : \"Oh, what the fuck? Did we get warped again?\"\nTon : \"That's probably right. Where did we get teleported to?\"\nHon : \"Hey guys, this is our school.\"\nTon : \"Oh, that's true. And what part of the school are we in?\"\nBall : \"A balcony walkway like this. Hmm. You guys look at that room.\"\nEveryone turned to look at one of the classrooms that had light shining out of it.\nTon : \"We've arrived, right? On the 6th floor.\"\nPoom : \"I don't know, but please, I'm so tired.\"\nBall : \"There was something unknown in the shape of a person walking out of the room.\"\nTon : \"Everyone, stay sharp!!\"\nThe light in the room shone through something like a shadow of a person outside the room.\nAnd that thing was walking out until it appeared in front of them.\nTeacher : \"What are you all doing here so late at night?\"\n",school_img);
 }
 
 void event_5_first_attempt(int num){
@@ -425,13 +432,13 @@ void event_5_first_attempt(int num){
         "Hon : \"Oh no.\"\n"
         "In front of him was a man holding a gun and the corpses of his friends who had been shot silently.\n"
         "Man : \"I just forgot to shoot someone. Thank you for opening the door for me and goodbye.\"\n";
-        inFramePrint(open,act1_img);
+        inFramePrint(open,manholdinggun_img);
         over_yet = 1;
     } else {
         char notopen[] =
         "Hall chose not to open it and backed away from the door.\nBut on the other side of the door, he started pounding on the door harder and harder. Along with saying....\n"
         "? : \"Don't let me go in. You brats, I'm going to shoot you all.\"\n";
-        inFramePrint(notopen,act1_img);
+        inFramePrint(notopen,doorofquestion_img);
         over_yet = 0;
     }
 }
@@ -442,7 +449,7 @@ void event_6_confused(int num){
         "When Bhumi opened the door, he found a man standing covered in blood.\n"
         "Man : \"I thank you very much. If you don't open it, I will definitely die.\n      Even though I'm already dead, haha. But it would be better if you died with me.\"\n"
         "The man then grabbed Phum's head and twisted Phum's neck, causing Poom to die.\n";
-        inFramePrint(open,act1_img);
+        inFramePrint(open,neck_snap_img);
         over_yet = 1;
     } else {
         over_yet = 0;

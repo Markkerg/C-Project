@@ -25,13 +25,13 @@ int main(){
         if(act == 1){
         Act_1();
         }
-        if(check == 1 && act == 2){
+        if(check == 1 && act == 2 && process == 0){
             Loading();
             act2_1_behindschool();
-            if(check == 1 && act == 3){
+            if(check == 1 && act == 3 && process == 0){
                 Loading();
                 act2_2_roadtothatroom();
-                if(check == 1 && act == 4){
+                if(check == 1 && act == 4 && process == 0){
                     Loading();
                     act3_endingofstory();
                 }

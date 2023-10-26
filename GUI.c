@@ -58,7 +58,7 @@ int main_image(const char *text){
     for (int i = 0; text[i] != '\0'; i++) {
         if (text[i] == '\n') {
             line++;
-            printf("\033[%d;3H", rows-28+line);
+            printf("\033[%d;2H", rows-28+line);
             i++;
         }
         printf("%c", text[i]);
@@ -148,19 +148,19 @@ void inFramePrint(const char *text, const char *img) {
                 name[name_lenth] = text[m-j];
                 name_lenth++;
             }
-            if (name[0] == 'T' && name_lenth >= 3){
+            if (name[0] == 'T' && name_lenth == 3){
                     character_image(ton_img);
                     checkimg = 1;
                 }
-                else if (name[0] == 'B' && name_lenth >= 3){
+                else if (name[0] == 'B' && name_lenth == 3){
                     character_image(ball_img);
                     checkimg = 1;
                 }
-                else if (name[0] == 'P' && name_lenth >= 4){
+                else if (name[0] == 'P' && name_lenth == 4){
                     character_image(poom_img);
                     checkimg = 1;
                 }
-                else if (name[0] == 'H' && name_lenth >= 3){
+                else if (name[0] == 'H' && name_lenth == 3){
                     character_image(hon_img);
                     checkimg = 1;
                 }
@@ -395,6 +395,7 @@ int decisionPrint(const char *text, const char *img){
     while(1){
         int ch = getchar();
         fflush(stdout);
+        //choice hightlight
         if (ch == '1') {
             fflush(stdout);
             printf("\033[30;47m");
