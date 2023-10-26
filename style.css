@@ -44,6 +44,7 @@ body {
     height: auto;
     margin: 0 auto;
     margin-top: 110px;
+    margin-bottom: 30px;
     background-color: black;
     border: 1px solid rgb(253, 165, 0); /* เพิ่ม border รอบ content */
     padding: 20px; /* ระยะขอบของ content */
@@ -71,6 +72,11 @@ body {
     color: rgb(253, 165, 0);
 }
 
+.boxpadding{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .textcontent{
     font-size: 18px;
     font-family: 'Kanit', sans-serif;
@@ -96,6 +102,7 @@ body {
     align-items: center;
     text-align: center;
     height: auto; /* ระยะที่เต็มหน้าจอ */
+    margin-bottom: 10px;
   }
   
 .clipdemo {
@@ -156,5 +163,19 @@ body {
     justify-content: flex-end;
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
+}
+
+.posterbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.poster{
+    width: 900px;
+    height: auto;
 }
   
